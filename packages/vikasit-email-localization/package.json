@@ -1,0 +1,17 @@
+{
+  "name": "vikasit-email-localization",
+  "private": "true",
+  "description": "Email editor",
+  "version": "4.14.0",
+  "author": "MyVikasit",
+  "keywords": [],
+  "files": [
+    "locales"
+  ],
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}
