@@ -6,10 +6,6 @@
 
 </br>
 
-## Custom Services
-For customized features or paid consultation services, please contact 962491243@qq.com.
-
-
 ## Getting started
 
 ```sh
