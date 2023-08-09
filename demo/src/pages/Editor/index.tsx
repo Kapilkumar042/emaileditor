@@ -15,6 +15,7 @@ import {
   Modal,
   PageHeader,
   Select,
+  Layout
 } from '@arco-design/web-react';
 import { useQuery } from '@demo/hooks/useQuery';
 import { useHistory } from 'react-router-dom';
@@ -34,6 +35,8 @@ import {
   EmailEditorProviderProps,
   IEmailTemplate,
 } from 'vikasit-email-editor';
+
+import CustomHeader from '@demo/components/Header/CustomHeader';
 
 import { Stack } from '@demo/components/Stack';
 import { pushEvent } from '@demo/utils/pushEvent';
@@ -540,103 +543,7 @@ export default function Editor() {
           {({ values }, { submit, restart }) => {
             return (
               <>
-                <PageHeader
-                  style={{ background: 'var(--color-bg-2)' }}
-                  backIcon
-                  title='Edit'
-                  onBack={() => history.push('/')}
-                  extra={
-                    <Stack alignment='center'>
-                      <Button
-                        onClick={() => setIsDarkMode(v => !v)}
-                        shape='circle'
-                        type='text'
-                        icon={isDarkMode ? <IconMoonFill /> : <IconSunFill />}
-                      ></Button>
-
-                      <Select
-                        onChange={onChangeTheme}
-                        value={theme}
-                      >
-                        <Select.Option value='blue'>Blue</Select.Option>
-                        <Select.Option value='green'>Green</Select.Option>
-                        <Select.Option value='purple'>Purple</Select.Option>
-                      </Select>
-                      <Select
-                        onChange={setLocale}
-                        value={locale}
-                      >
-                        <Select.Option value='en'>English</Select.Option>
-                        <Select.Option value='zh-Hans'>中文简体</Select.Option>
-                        <Select.Option value='zh-Hant'>中文繁體</Select.Option>
-                        <Select.Option value='ja'>Japanese</Select.Option>
-                        <Select.Option value='it'>Italian</Select.Option>
-                      </Select>
-
-                      {/* <Button onClick={openMergeTagsModal}>Update mergeTags</Button> */}
-
-                      <Dropdown
-                        droplist={
-                          <Menu>
-                            <Menu.Item
-                              key='MJML'
-                              onClick={() => onImportMJML({ restart })}
-                            >
-                              Import from MJML
-                            </Menu.Item>
-
-                            <Menu.Item
-                              key='JSON'
-                              onClick={() => onImportJSON({ restart })}
-                            >
-                              Import from JSON
-                            </Menu.Item>
-                          </Menu>
-                        }
-                      >
-                        <Button>
-                          <strong>Import</strong>
-                        </Button>
-                      </Dropdown>
-
-                      <Dropdown
-                        droplist={
-                          <Menu>
-                            <Menu.Item
-                              key='Export MJML'
-                              onClick={() => onExportMJML(values)}
-                            >
-                              Export MJML
-                            </Menu.Item>
-                            <Menu.Item
-                              key='Export HTML'
-                              onClick={() => onExportHTML(values)}
-                            >
-                              Export HTML
-                            </Menu.Item>
-                            <Menu.Item
-                              key='Export JSON'
-                              onClick={() => onExportJSON(values)}
-                            >
-                              Export JSON
-                            </Menu.Item>
-                            <Menu.Item
-                              key='Export Image'
-                              onClick={() => onExportImage(values)}
-                            >
-                              Export Image
-                            </Menu.Item>
-                          </Menu>
-                        }
-                      >
-                        <Button>
-                          <strong>Export</strong>
-                        </Button>
-                      </Dropdown>
-
-                    </Stack>
-                  }
-                />
+                <CustomHeader />
                 <StandardLayout
                   compact={!smallScene}
                   categories={defaultCategories}

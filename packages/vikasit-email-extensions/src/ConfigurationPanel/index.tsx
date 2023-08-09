@@ -37,6 +37,12 @@ export function ConfigurationPanel({
 
   if (!inited) return null;
 
+  // return (
+  //   <>
+  //     <AttributePanel />
+  //   </>
+  // );
+
   return (
     <>
       {showSourceCode ? (
