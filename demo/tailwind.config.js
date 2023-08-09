@@ -1,19 +1,19 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-var-requires */
-const defaultTheme = require("tailwindcss/defaultTheme");
-const colors = require("tailwindcss/colors");
+// const defaultTheme = require("tailwindcss/defaultTheme");
+// const colors = require("tailwindcss/colors");
 
-module.exports = {
-  mode: "jit",
-  content: [
-    '../src/pages/**/*.{ts,tsx}',
-    './src/components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-  ],
-  darkMode: "class",
-  theme: {
-    extend: {
+// module.exports = {
+//   mode: "jit",
+//   content: [
+//     '../src/pages/**/*.{ts,tsx}',
+//     './src/components/**/*.{ts,tsx}',
+//     './app/**/*.{ts,tsx}',
+//     './src/**/*.{ts,tsx}',
+//   ],
+//   darkMode: "class",
+//   theme: {
+//     extend: {
       // fontFamily: {
       //   body: [
       //     'Nunito Sans',
@@ -197,7 +197,19 @@ module.exports = {
       //   "accordion-down": "accordion-down 0.2s ease-out",
       //   "accordion-up": "accordion-up 0.2s ease-out",
       // },
-    },
+//     },
+//   },
+//   plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"), require("@tailwindcss/aspect-ratio"), require("tailwindcss-animate")],
+// };
+
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
   },
-  plugins: [require("@tailwindcss/forms"), require("@tailwindcss/typography"), require("@tailwindcss/aspect-ratio"), require("tailwindcss-animate")],
-};
+  plugins: [],
+}
