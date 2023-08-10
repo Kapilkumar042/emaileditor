@@ -14,20 +14,20 @@
   dependencies:
     color "^3.1.3"
 
-"@arco-design/web-react@^2.26.2", "@arco-design/web-react@^2.27.0", "@arco-design/web-react@^2.36.1":
-  version "2.36.1"
-  resolved "https://registry.npmjs.org/@arco-design/web-react/-/web-react-2.36.1.tgz"
-  integrity sha512-ts45Aqwg8PzHSyn95+XOQAdxLvoB4V+UmPGFNIreC+OLGVIdPaBuCDWHXR3au5quooZaPdWiWLXF/R0Oq1Rojw==
+"@arco-design/web-react@^2.26.2", "@arco-design/web-react@^2.27.0", "@arco-design/web-react@^2.36.1", "@arco-design/web-react@^2.51.1":
+  version "2.51.1"
+  resolved "https://registry.npmjs.org/@arco-design/web-react/-/web-react-2.51.1.tgz"
+  integrity sha512-tdaI1mUxx+mLbR7sgq/9F0Ts2igN+WGFihA1+Erzv+Z57vXtKIIzZ4MG2GVIUEEld9+oa2Lxt1/9hpFgp8goKw==
   dependencies:
     "@arco-design/color" "^0.4.0"
     "@babel/runtime" "^7.5.5"
     b-tween "^0.3.3"
-    b-validate "^1.4.0"
+    b-validate "^1.4.2"
     compute-scroll-into-view "^1.0.17"
     dayjs "^1.10.5"
     lodash "^4.17.21"
     number-precision "^1.3.1"
-    react-focus-lock "^2.2.1"
+    react-focus-lock "^2.9.1"
     react-transition-group "^4.3.0"
     resize-observer-polyfill "^1.5.1"
     scroll-into-view-if-needed "2.2.20"
@@ -47,6 +47,11 @@
   version "0.0.3"
   resolved "https://registry.npmjs.org/@arco-themes/react-easy-email-theme/-/react-easy-email-theme-0.0.3.tgz"
   integrity sha512-JZXavU2v7YK38KyoK3hUQ2bxpdD5JwPzjxFNftH6Dhiuv/CppK55/uWzDpQJIohcHM9BTRcYmgUA49OE2MHWqA==
+
+"@arco-themes/react-tailwind-sky@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.npmjs.org/@arco-themes/react-tailwind-sky/-/react-tailwind-sky-0.0.2.tgz"
+  integrity sha512-PauTsYEFY1H8K4xrPFrg8cCOUSRkh/EhnLyTUF3DmdiltBTfbwiyu3pyu4jbpaafRYyWh0b2XtgwK2/DoRbazg==
 
 "@babel/code-frame@^7.16.0":
   version "7.16.0"
@@ -510,7 +515,7 @@
     "@types/history" "*"
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8.0 || ^17.0.0":
+"@types/react@*", "@types/react@^16.8.0 || ^17.0.0 || ^18.0.0", "@types/react@^16.9.0 || ^17.0.0 || ^18.0.0":
   version "17.0.35"
   resolved "https://registry.npmjs.org/@types/react/-/react-17.0.35.tgz"
   integrity sha512-r3C8/TJuri/SLZiiwwxQoLAoavaczARfT9up9b4Jr65+ErAUX3MIkU0oMOQnrpfgHme8zIqZLX7O5nnjm5Wayw==
@@ -616,10 +621,10 @@ b-tween@^0.3.3:
   resolved "https://registry.npmjs.org/b-tween/-/b-tween-0.3.3.tgz"
   integrity sha512-oEHegcRpA7fAuc9KC4nktucuZn2aS8htymCPcP3qkEGPqiBH+GfqtqoG2l7LxHngg6O0HFM7hOeOYExl1Oz4ZA==
 
-b-validate@^1.4.0:
-  version "1.4.1"
-  resolved "https://registry.npmjs.org/b-validate/-/b-validate-1.4.1.tgz"
-  integrity sha512-X6ImDku5YY8NfWTh/hX8CAaronWnNXpb159cqs6lDWLtI4OWiehZ4B0NshfatTuKt1HIeNq9PObE/Xl5YoJYUg==
+b-validate@^1.4.2:
+  version "1.5.3"
+  resolved "https://registry.npmjs.org/b-validate/-/b-validate-1.5.3.tgz"
+  integrity sha512-iCvCkGFskbaYtfQ0a3GmcQCHl/Sv1GufXFGuUQ+FE+WJa7A/espLOuFIn09B944V8/ImPj71T4+rTASxO2PAuA==
 
 balanced-match@^1.0.0:
   version "1.0.2"
@@ -1108,10 +1113,10 @@ final-form@^4.20.4, final-form@4.20.4:
   dependencies:
     "@babel/runtime" "^7.10.0"
 
-focus-lock@^0.9.2:
-  version "0.9.2"
-  resolved "https://registry.npmjs.org/focus-lock/-/focus-lock-0.9.2.tgz"
-  integrity sha512-YtHxjX7a0IC0ZACL5wsX8QdncXofWpGPNoVMuI/nZUrPGp6LmNI6+D5j0pPj+v8Kw5EpweA+T5yImK0rnWf7oQ==
+focus-lock@^0.11.6:
+  version "0.11.6"
+  resolved "https://registry.npmjs.org/focus-lock/-/focus-lock-0.11.6.tgz"
+  integrity sha512-KSuV3ur4gf2KqMNoZx3nXNVhqCkn42GuTYCX4tXPEwf0MjpFQmNMiN6m7dXaUXgIoivL6/65agoUMg4RLS0Vbg==
   dependencies:
     tslib "^2.0.3"
 
@@ -1830,10 +1835,10 @@ queue-microtask@^1.2.2:
   resolved "https://registry.npmjs.org/queue-microtask/-/queue-microtask-1.2.3.tgz"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-clientside-effect@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.npmjs.org/react-clientside-effect/-/react-clientside-effect-1.2.5.tgz"
-  integrity sha512-2bL8qFW1TGBHozGGbVeyvnggRpMjibeZM2536AKNENLECutp2yfs44IL8Hmpn8qjFQ2K7A9PnYf3vc7aQq/cPA==
+react-clientside-effect@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.npmjs.org/react-clientside-effect/-/react-clientside-effect-1.2.6.tgz"
+  integrity sha512-XGGGRQAKY+q25Lz9a/4EPqom7WRjz3z9R2k4jhVKA/puQFH/5Nt27vFZYql4m4NVNdUvX8PS3O7r/Zzm7cjUlg==
   dependencies:
     "@babel/runtime" "^7.12.13"
 
@@ -1866,17 +1871,17 @@ react-final-form@^6.5.7:
   dependencies:
     "@babel/runtime" "^7.15.4"
 
-react-focus-lock@^2.2.1:
-  version "2.6.0"
-  resolved "https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.6.0.tgz"
-  integrity sha512-2yB5KWyaefbvFDgqvsg/KpIjbqVlhIY2c/dyDcokDLhB3Ib7I4bjsrta5OkI5euUoIu5xBTyBwIQZPykUJAr1g==
+react-focus-lock@^2.9.1:
+  version "2.9.5"
+  resolved "https://registry.npmjs.org/react-focus-lock/-/react-focus-lock-2.9.5.tgz"
+  integrity sha512-h6vrdgUbsH2HeD5I7I3Cx1PPrmwGuKYICS+kB9m+32X/9xHRrAbxgvaBpG7BFBN9h3tO+C3qX1QAVESmi4CiIA==
   dependencies:
     "@babel/runtime" "^7.0.0"
-    focus-lock "^0.9.2"
+    focus-lock "^0.11.6"
     prop-types "^15.6.2"
-    react-clientside-effect "^1.2.5"
-    use-callback-ref "^1.2.5"
-    use-sidecar "^1.0.5"
+    react-clientside-effect "^1.2.6"
+    use-callback-ref "^1.3.0"
+    use-sidecar "^1.1.2"
 
 react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
@@ -1963,7 +1968,7 @@ react-use@^17.3.1:
     ts-easing "^0.2.0"
     tslib "^2.1.0"
 
-react@*, "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.3.0 || ^16.0.0 || ^17.0.0", "react@^16.14.0 || ^17.0.0", "react@^16.8.0  || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17", react@>=15, react@>=16, react@>=16.6.0, react@17.0.2:
+react@*, "react@^0.14.0 || ^15.0.0 || ^16.0.0 || ^17.0.0", "react@^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.14.0 || ^17.0.0", "react@^16.8.0  || ^17.0.0", "react@^16.8.0 || ^17.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17", react@>=15, react@>=16, react@>=16.6.0, react@17.0.2:
   version "17.0.2"
   resolved "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
@@ -2399,7 +2404,7 @@ ts-node@^10.7.0, ts-node@>=9.0.0:
     v8-compile-cache-lib "^3.0.0"
     yn "3.1.1"
 
-tslib@*, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0:
+tslib@*, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0:
   version "2.3.1"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.3.1.tgz"
   integrity sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==
@@ -2441,18 +2446,20 @@ upper-case@^2.0.2:
   dependencies:
     tslib "^2.0.3"
 
-use-callback-ref@^1.2.5:
-  version "1.2.5"
-  resolved "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.2.5.tgz"
-  integrity sha512-gN3vgMISAgacF7sqsLPByqoePooY3n2emTH59Ur5d/M8eg4WTWu1xp8i8DHjohftIyEx0S08RiYxbffr4j8Peg==
+use-callback-ref@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.npmjs.org/use-callback-ref/-/use-callback-ref-1.3.0.tgz"
+  integrity sha512-3FT9PRuRdbB9HfXhEq35u4oZkvpJ5kuYbpqhCfmiZyReuRgpnhDlbr2ZEnnuS0RrJAPn6l23xjFg9kpDM+Ms7w==
+  dependencies:
+    tslib "^2.0.0"
 
-use-sidecar@^1.0.5:
-  version "1.0.5"
-  resolved "https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.0.5.tgz"
-  integrity sha512-k9jnrjYNwN6xYLj1iaGhonDghfvmeTmYjAiGvOr7clwKfPjMXJf4/HOr7oT5tJwYafgp2tG2l3eZEOfoELiMcA==
+use-sidecar@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/use-sidecar/-/use-sidecar-1.1.2.tgz"
+  integrity sha512-epTbsLuzZ7lPClpz2TyryBfztm7m+28DlEv2ZCQ3MDr5ssiwyOwGH/e5F9CkfWjJ1t4clvI58yF822/GUkjjhw==
   dependencies:
     detect-node-es "^1.1.0"
-    tslib "^1.9.3"
+    tslib "^2.0.0"
 
 util-deprecate@^1.0.2:
   version "1.0.2"
