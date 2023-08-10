@@ -7,6 +7,11 @@
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
   integrity sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==
 
+"@arco-themes/react-tailwind-sky@^0.0.2":
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/@arco-themes/react-tailwind-sky/-/react-tailwind-sky-0.0.2.tgz#9dc903bc43d90a29c08868a7be0459dbd4321610"
+  integrity sha512-PauTsYEFY1H8K4xrPFrg8cCOUSRkh/EhnLyTUF3DmdiltBTfbwiyu3pyu4jbpaafRYyWh0b2XtgwK2/DoRbazg==
+
 "@babel/code-frame@^7.0.0":
 <<<<<<< Updated upstream
   version "7.22.5"

@@ -30,6 +30,7 @@ function App() {
                 src='/loading'
                 alt=''
               />
+
               <p
                 style={{
                   fontSize: 24,

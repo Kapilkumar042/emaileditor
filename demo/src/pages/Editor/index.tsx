@@ -58,7 +58,7 @@ import './components/CustomBlocks';
 
 import 'vikasit-email-editor/lib/style.css';
 import 'vikasit-email-extensions/lib/style.css';
-import blueTheme from '@arco-themes/react-easy-email-theme/css/arco.css?inline';
+import blueTheme from '@arco-themes/react-tailwind-sky/css/arco.css?inline';
 import purpleTheme from '@arco-themes/react-easy-email-theme-purple/css/arco.css?inline';
 import greenTheme from '@arco-themes/react-easy-email-theme-green/css/arco.css?inline';
 import { testMergeTags } from './testMergeTags';

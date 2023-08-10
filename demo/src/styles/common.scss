@@ -1,4 +1,4 @@
-$primary-color: #417505;
+$primary-color: #1066B5;
 $max-page-size: 480px;
 
 * {
@@ -22,6 +22,7 @@ body {
 .visible-on-hover {
   opacity: 0;
   transition: all 0.5s;
+
   &:hover {
     opacity: 1;
   }
