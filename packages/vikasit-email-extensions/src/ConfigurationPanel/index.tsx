@@ -45,7 +45,7 @@ export function ConfigurationPanel({
 
   return (
     <>
-      {showSourceCode ? (
+      {
         <Tabs
           className={styles.tabs}
           renderTabHeader={(_, DefaultHeader) =>
@@ -75,14 +75,14 @@ export function ConfigurationPanel({
         >
           <Tabs.TabPane
             title={
-              <div style={{ height: 40, lineHeight: '40px' }}>{t('Configuration')}</div>
+              <div className=' px-2 flex justify-start ... '>{t('Configuration')}</div>
             }
           >
             <FullHeightOverlayScrollbars height={`calc(${height} - 60px)`}>
               <AttributePanel />
             </FullHeightOverlayScrollbars>
           </Tabs.TabPane>
-
+          {/*
           <Tabs.TabPane
             destroyOnHide
             key='Source code'
@@ -91,13 +91,14 @@ export function ConfigurationPanel({
             }
           >
             <FullHeightOverlayScrollbars height={`calc(${height} - 60px)`}>
-              <SourceCodePanel jsonReadOnly={jsonReadOnly} mjmlReadOnly={mjmlReadOnly} />
+              <SourceCodePanel
+                jsonReadOnly={jsonReadOnly}
+                mjmlReadOnly={mjmlReadOnly}
+              />
             </FullHeightOverlayScrollbars>
-          </Tabs.TabPane>
+          </Tabs.TabPane> */}
         </Tabs>
-      ) : (
-        <AttributePanel />
-      )}
+      }
     </>
   );
 }
