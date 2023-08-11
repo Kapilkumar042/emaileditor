@@ -14,19 +14,19 @@ const CustomHeader: FC = () => {
         <span className="text-[#09090B]  font-inter font-medium text-[1.25rem]">Template for launch of SendMillion...</span>
         <div>
           <Button type='secondary' icon={<IconClockCircle />}>
-            <span className="text-xs font-inter font-normal text-[0.775rem]">Last save 11:30 AM</span>
+            <span className="text-xs font-inter font-normal text-[0.775rem]">{t('HeaderTimeButton')}</span>
           </Button>
         </div>
       </div>
       <div className='flex gap-4'>
         <div>
           <Button type='outline' icon={<IconEye />}>
-            <span className='text-[12px]'>Preivew & Test</span>
+            <span className='text-[12px]'>{t('HeaderPreviewButton')}</span>
           </Button>
         </div>
         <div>
           <ButtonGroup>
-            <Button type='primary'>Save & Publish</Button>
+            <Button type='primary'>{t('HeaderSaveButton')}</Button>
             <Button type='primary' icon={<IconMoreVertical />} />
           </ButtonGroup>
         </div>

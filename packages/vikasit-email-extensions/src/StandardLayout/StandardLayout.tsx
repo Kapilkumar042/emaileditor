@@ -133,7 +133,6 @@ export const StandardLayout: React.FC<ExtensionProps> = props => {
                 mjmlReadOnly={mjmlReadOnly}
               />
             )}
-            <Layout style={{ height: containerHeight, flex: 1 }}>{props.children}</Layout>
             {!compact && (
               <EditPanel
                 showSourceCode={showSourceCode}
@@ -141,6 +140,7 @@ export const StandardLayout: React.FC<ExtensionProps> = props => {
                 mjmlReadOnly={mjmlReadOnly}
               />
             )}
+            <Layout style={{ height: containerHeight, flex: 1 }}>{props.children}</Layout>
             {compact ? (
               <Layout.Sider
                 style={{

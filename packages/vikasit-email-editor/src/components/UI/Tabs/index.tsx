@@ -58,6 +58,7 @@ const Tabs: React.FC<TabsProps> = props => {
           distribution='equalSpacing'
           alignment='center'
         >
+          {props.tabBarExtraContent}
           <Stack alignment='center'>
             {React.Children.map(
               props.children as any,
@@ -80,7 +81,7 @@ const Tabs: React.FC<TabsProps> = props => {
               },
             )}
           </Stack>
-          {props.tabBarExtraContent}
+          {/* {props.tabBarExtraContent} */}
         </Stack>
       </div>
       {React.Children.map(
