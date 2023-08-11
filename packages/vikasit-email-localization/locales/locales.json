@@ -250,7 +250,10 @@
     "Table": "Table",
     "Make it simple for everyone to compose emails!": "Make it simple for everyone to compose emails!",
     "Accordion text": "Accordion text",
-    "Raw": "Raw"
+    "Raw": "Raw",
+    "HeaderTimeButton":"Last save 11:30 AM",
+    "HeaderPreviewButton":"Preivew & Test",
+    "HeaderSaveButton":"Save & Publish"
   },
   "zh-Hans": {
     "undo": "撤消",
