@@ -2,7 +2,6 @@ import { Layout, Tabs } from '@arco-design/web-react';
 import { useEditorProps } from 'vikasit-email-editor';
 import React from 'react';
 import { Blocks } from './Blocks';
-import { Layouts } from './Layouts';
 import { BlockLayer } from '@extensions/BlockLayer';
 import { FullHeightOverlayScrollbars } from '@extensions/components/FullHeightOverlayScrollbars';
 import styles from './index.module.scss';
@@ -58,7 +57,7 @@ export function EditPanel({
         >
           <FullHeightOverlayScrollbars height={`calc(${height} - 60px)`}>
             <div style={{ padding: 20 }}>
-              <Layouts />
+              <BlockLayer />
             </div>
           </FullHeightOverlayScrollbars>
         </TabPane>
