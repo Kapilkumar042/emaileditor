@@ -57,7 +57,7 @@ export const Stack = memo(function Stack({
   });
 
   return (
-    <div className={className}>
+    <div className={`${className} pl-2`}>
       <>{itemMarkup}</>
     </div>
   );

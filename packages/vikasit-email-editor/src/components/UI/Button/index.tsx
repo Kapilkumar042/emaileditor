@@ -20,6 +20,7 @@ export const Button: React.FC<ButtonProps> = props => {
       title={props.title}
       disabled={props.disabled}
       type='button'
+      style={{backgroundColor:"white"}}
     >
       <>{props.children}</>
     </button>

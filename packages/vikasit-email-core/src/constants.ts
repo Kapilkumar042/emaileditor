@@ -21,6 +21,7 @@ export enum BasicType {
   CAROUSEL = 'carousel',
   NAVBAR = 'navbar',
   SOCIAL = 'social',
+  PARA='para',
   // TODO
   TABLE = 'table',
 
@@ -44,6 +45,7 @@ export enum AdvancedType {
   COLUMN = 'advanced_column',
   GROUP = 'advanced_group',
   HERO = 'advanced_hero',
+  PARA = 'advanced_para'
 }
 
 export const MERGE_TAG_CLASS_NAME = 'vikasit-email-merge-tag-container';
