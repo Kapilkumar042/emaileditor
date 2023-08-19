@@ -2,7 +2,7 @@ import { Collapse, Grid, Space, Typography } from '@arco-design/web-react';
 import { AdvancedType, BlockManager, IBlockData } from 'vikasit-email-core';
 import { BlockAvatarWrapper, IconFont } from 'vikasit-email-editor';
 import React, { useMemo, useState } from 'react';
-import { IconCaretRight, IconCaretUp } from '@arco-design/web-react/icon';
+import { IconCaretRight, IconCaretUp, IconDown, IconUp } from '@arco-design/web-react/icon';
 import { getIconNameByBlockType } from '@extensions/utils/getIconNameByBlockType';
 import styles from './index.module.scss';
 import { useExtensionProps } from '@extensions/components/Providers/ExtensionProvider';
@@ -17,7 +17,10 @@ export function Blocks() {
   return (
     <Collapse
       defaultActiveKey={defaultActiveKey}
-      style={{ paddingBottom: 30, minHeight: '100%' }}
+      // style={{ paddingBottom: 30, minHeight: '100%' , textAlign:"center", alignItems:"center", }}
+      expandIconPosition='right'
+      expandIcon={<IconDown/>}
+    className={styles['arco-collapse-item-header-right']}
     >
       {categories.map((cat, index) => {
         if (cat.displayType === 'column') {

@@ -9,7 +9,7 @@ import { FullHeightOverlayScrollbars } from '@extensions/components/FullHeightOv
 import styles from './index.module.scss';
 import { ConfigurationDrawer } from './ConfigurationDrawer';
 import { useExtensionProps } from '@extensions/components/Providers/ExtensionProvider';
-import { IconCaretRight, IconCaretUp } from '@arco-design/web-react/icon';
+import { IconCaretRight, IconCaretUp, IconDown, IconUp } from '@arco-design/web-react/icon';
 
 const TabPane = Tabs.TabPane;
 
@@ -73,12 +73,15 @@ export function EditPanel({
           key='1'
           title={t('Layout')}
         >
-          <FullHeightOverlayScrollbars height={`calc(${height} - 60px)`}>
-            <div style={{ padding: 20 }}>
+          {/* <FullHeightOverlayScrollbars height={`calc(${height} - 60px)`}>
+            <div style={{ padding: 20 }}> */}
               {/* <BlockLayer /> */}
               <Collapse
                 defaultActiveKey={defaultActiveKey}
-                style={{ paddingBottom: 30, minHeight: '100%'}}
+                // style={{ paddingBottom: 30, minHeight: '100%'}}
+                expandIconPosition='right'
+                expandIcon={<IconDown/>}
+                bordered={false}
               >
                 {categories.map((cat, index) => {
                   if (cat.displayType === 'column') {
@@ -108,8 +111,8 @@ export function EditPanel({
                   }
                 })}
               </Collapse>
-            </div>
-          </FullHeightOverlayScrollbars>
+            {/* </div>
+          </FullHeightOverlayScrollbars> */}
         </TabPane>
       </Tabs>
       {!compact && (
@@ -140,7 +143,7 @@ function LayoutItem({ columns, title }: { columns: string[][]; title: string }) 
       >
         <span>{title}</span>
         {columns.length > 1 && (
-          <span>{!visible ? <IconCaretRight /> : <IconCaretUp />}</span>
+          <span>{!visible ? <IconDown /> : <IconUp />}</span>
         )}
       </p>
       {columns.map((item, index) => {

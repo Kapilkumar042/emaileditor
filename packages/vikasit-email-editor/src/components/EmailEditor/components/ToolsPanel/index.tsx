@@ -9,6 +9,7 @@ export function ToolsPanel() {
 
   return (
     <Stack>
+      {/* <div className="px-3"> */}
       <Button title={t('undo')} disabled={!undoable} onClick={undo}>
         <IconFont
           iconName='icon-undo'
@@ -18,7 +19,7 @@ export function ToolsPanel() {
           }}
         />
       </Button>
-
+      {/* </div> */}
       <Button title={t('redo')} disabled={!redoable} onClick={redo}>
         <IconFont
           iconName='icon-redo'
