@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:guide x="19.009" y="27.864" angle="0"/>
+    <bx:guide x="18" y="26.966" angle="0"/>
+    <bx:guide x="14.69" y="5.989" angle="90"/>
+    <bx:guide x="3.975" y="7.303" angle="0"/>
+    <bx:guide x="11.336" y="17.989" angle="90"/>
+    <bx:guide x="5.018" y="21.887" angle="0"/>
+    <bx:guide x="18.283" y="21.416" angle="0"/>
+    <bx:guide x="37.996" y="9.024" angle="0"/>
+    <bx:guide x="55.089" y="14.913" angle="0"/>
+    <path id="path-0" d="M 2.946 19.097 C 5.878 19.15 8.326 19.692 10.237 20.511 C 10.972 20.839 10.847 21.185 10.847 20.4 C 10.847 19.19 13.125 19.722 13.703 19.818 C 13.758 20.504 13.784 20.985 13.508 21.537 L 13.453 21.759 C 13.304 22.28 13.098 23.084 12.732 23.45" style="fill: none;"/>
+    <bx:guide x="21.481" y="20.275" angle="0"/>
+    <bx:guide x="41.981" y="24.171" angle="0"/>
+    <bx:guide x="17.399" y="12.862" angle="90"/>
+  </defs>
+  <title>icons/editor/element-style-3</title>
+  <path style="fill: none; paint-order: stroke; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 3.171 23.793 L 7.947 18.961 L 12.838 23.393 L 11.201 21.642 L 13.384 19.607 L 18.037 23.72"/>
+  <path style="fill: none; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 10.96 18.598 C 12.116 18.601 12.821 17.359 12.248 16.357 C 11.672 15.352 10.231 15.352 9.653 16.357 C 9.121 17.281 9.694 18.457 10.75 18.598 C 10.864 18.595 10.906 18.613 10.96 18.598 Z"/>
+  <rect x="3.173" y="13.636" width="15.11" height="12.088" style="fill: none; stroke-width: 1.5px; paint-order: stroke; stroke-miterlimit: 50; stroke-linecap: square; stroke: rgb(132, 146, 166);"/>
+  <path style="fill: none; paint-order: stroke; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 40.77 23.816 L 45.546 18.984 L 50.437 23.416 L 48.8 21.665 L 50.983 19.63 L 55.636 23.743"/>
+  <path style="fill: none; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 48.559 18.621 C 49.715 18.624 50.42 17.382 49.847 16.38 C 49.271 15.375 47.83 15.375 47.252 16.38 C 46.72 17.304 47.293 18.48 48.349 18.621 C 48.463 18.618 48.505 18.636 48.559 18.621 Z"/>
+  <rect x="40.772" y="13.659" width="15.11" height="12.088" style="fill: none; stroke-width: 1.5px; paint-order: stroke; stroke-miterlimit: 50; stroke-linecap: square; stroke: rgb(132, 146, 166);"/>
+  <path style="fill: none; paint-order: stroke; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 21.964 23.791 L 26.74 18.959 L 31.631 23.391 L 29.994 21.64 L 32.177 19.605 L 36.83 23.718"/>
+  <path style="fill: none; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 29.753 18.596 C 30.909 18.599 31.614 17.357 31.041 16.355 C 30.465 15.35 29.024 15.35 28.446 16.355 C 27.914 17.279 28.487 18.455 29.543 18.596 C 29.657 18.593 29.699 18.611 29.753 18.596 Z"/>
+  <rect x="21.966" y="13.634" width="15.11" height="12.088" style="fill: none; stroke-width: 1.5px; paint-order: stroke; stroke-miterlimit: 50; stroke-linecap: square; stroke: rgb(132, 146, 166);"/>
+</svg>
