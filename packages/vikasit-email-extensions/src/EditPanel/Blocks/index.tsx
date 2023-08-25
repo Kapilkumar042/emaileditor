@@ -20,7 +20,7 @@ export function Blocks() {
       // style={{ paddingBottom: 30, minHeight: '100%' , textAlign:"center", alignItems:"center", }}
       expandIconPosition='right'
       expandIcon={<IconDown/>}
-    className={styles['arco-collapse-item-header-right']}
+      className={styles["arco-collapse-item-header-title"]}
     >
       {categories.map((cat, index) => {
         if (cat.displayType === 'column') {
@@ -57,6 +57,7 @@ export function Blocks() {
               contentStyle={{ padding: 0, paddingBottom: 0, paddingTop: 20 }}
               name={cat.label}
               header={cat.label}
+              className={styles["arco-collapse-item-header-title"]}
             >
               <Grid.Row>
                 {cat.blocks.map((item, index) => {
