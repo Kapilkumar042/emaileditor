@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:guide x="15.987" y="7.999" angle="90"/>
+    <bx:guide x="13.987" y="13.212" angle="0"/>
+    <bx:guide x="31.871" y="32.012" angle="90"/>
+    <bx:guide x="46.031" y="16.803" angle="0"/>
+    <filter id="motion-blur-filter-0" color-interpolation-filters="sRGB" x="-500%" y="-500%" width="1000%" height="1000%" bx:preset="motion-blur 1 5 horizontal">
+      <feGaussianBlur stdDeviation="5 0" edgeMode="none"/>
+    </filter>
+    <bx:guide x="29.911" y="29.036" angle="90"/>
+  </defs>
+  <title>icons/editor/element-image</title>
+  <g id="icons/editor/element-image" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="matrix(1, 0, 0, 1, 0, -3)">
+    <rect x="14.06" y="34.216" width="31.783" height="4.374" style="filter: url(#motion-blur-filter-0); fill: rgb(132, 146, 166);"/>
+  </g>
+  <rect x="14.696" y="6.144" width="30.502" height="22.147" style="fill: none; stroke: rgb(132, 146, 166); stroke-width: 1.5px; stroke-linejoin: round;"/>
+</svg>

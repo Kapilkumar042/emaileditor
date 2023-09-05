@@ -15,7 +15,7 @@ import {
   Modal,
   PageHeader,
   Select,
-  Layout
+  Layout,
 } from '@arco-design/web-react';
 import { useQuery } from '@demo/hooks/useQuery';
 import { useHistory } from 'react-router-dom';
@@ -70,6 +70,10 @@ import localesData from 'vikasit-email-localization/locales/locales.json';
 import { Uploader } from '@demo/utils/Uploader';
 import axios from 'axios';
 import enUS from '@arco-design/web-react/es/locale/en-US';
+import TextIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
+import ButtonIcon from '../../Icons/svg/block-button-v1-single-tone.svg';
+import SocialIcon from '../../Icons/svg/block-social-single-tone-v1.svg';
+import ImageIcon from '../../Icons/svg/block-image-text-vertical-single-tone-v1.svg';
 
 console.log(localesData);
 
@@ -80,28 +84,37 @@ const defaultCategories: ExtensionProps['categories'] = [
     blocks: [
       {
         type: AdvancedType.TEXT,
+        iconUrl: TextIcon,
       },
       {
         type: AdvancedType.IMAGE,
+        iconUrl: ImageIcon,
+
         payload: { attributes: { padding: '0px 0px 0px 0px' } },
       },
       {
         type: AdvancedType.BUTTON,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.SOCIAL,
+        iconUrl: SocialIcon,
       },
       {
         type: AdvancedType.DIVIDER,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.SPACER,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.HERO,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.WRAPPER,
+        iconUrl: TextIcon,
       },
     ],
   },
@@ -155,9 +168,7 @@ const defaultCategories: ExtensionProps['categories'] = [
           }}
         >
           <img
-            src={
-              '#'
-            }
+            src={'#'}
             style={{
               maxWidth: '100%',
             }}
