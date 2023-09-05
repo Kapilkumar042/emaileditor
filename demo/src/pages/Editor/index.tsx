@@ -116,6 +116,9 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.WRAPPER,
         iconUrl: TextIcon,
       },
+      {
+        type: AdvancedType.HEADER_WITH_LOGO,
+      },
     ],
   },
   {
@@ -606,6 +609,7 @@ function replaceStandardBlockToAdvancedBlock(blockData: IBlockData) {
     [BasicType.SECTION]: AdvancedType.SECTION,
     [BasicType.GROUP]: AdvancedType.GROUP,
     [BasicType.COLUMN]: AdvancedType.COLUMN,
+    [BasicType.HEADER_WITH_LOGO]:AdvancedType.HEADER_WITH_LOGO,
   };
 
   if (map[blockData.type]) {

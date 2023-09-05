@@ -5,6 +5,7 @@ import { Text } from './Text';
 import { Image } from './Image';
 import { Group } from './Group';
 import { Button } from './Button';
+import { HeaderWithLogo }  from './HeaderWithLogo';
 import { Divider } from './Divider';
 import { Wrapper } from './Wrapper';
 import { Spacer } from './Spacer';
@@ -29,6 +30,7 @@ export const blocks = {
   [BasicType.IMAGE]: Image,
   [BasicType.GROUP]: Group,
   [BasicType.BUTTON]: Button,
+  [BasicType.HEADER_WITH_LOGO]:HeaderWithLogo,
   [BasicType.DIVIDER]: Divider,
   [BasicType.WRAPPER]: Wrapper,
   [BasicType.SPACER]: Spacer,
@@ -46,6 +48,7 @@ export const blocks = {
   [AdvancedType.TEXT]: Text,
   [AdvancedType.IMAGE]: Image,
   [AdvancedType.BUTTON]: Button,
+  [AdvancedType.HEADER_WITH_LOGO]:HeaderWithLogo,
   [AdvancedType.DIVIDER]: Divider,
   [AdvancedType.SPACER]: Spacer,
   [AdvancedType.ACCORDION]: Accordion,

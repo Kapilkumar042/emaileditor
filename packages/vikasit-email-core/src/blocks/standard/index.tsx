@@ -5,6 +5,7 @@ import { IText, Text } from './Text';
 import { IImage, Image } from './Image';
 import { Group, IGroup } from './Group';
 import { Button, IButton } from './Button';
+import { HeaderWithLogo,IHeader } from './HeaderWithLogo';
 import { Divider, IDivider } from './Divider';
 import { IWrapper, Wrapper } from './Wrapper';
 import { ISpacer, Spacer } from './Spacer';
@@ -30,6 +31,7 @@ export const standardBlocks = {
   [BasicType.IMAGE]: Image,
   [BasicType.GROUP]: Group,
   [BasicType.BUTTON]: Button,
+  [BasicType.HEADER_WITH_LOGO]:HeaderWithLogo,
   [BasicType.DIVIDER]: Divider,
   [BasicType.WRAPPER]: Wrapper,
   [BasicType.SPACER]: Spacer,
@@ -62,6 +64,7 @@ export type {
   ITable,
   IImage,
   IButton,
+  IHeader,
   IDivider,
   ISpacer,
   ICarousel,

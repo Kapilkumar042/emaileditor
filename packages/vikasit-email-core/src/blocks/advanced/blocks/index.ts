@@ -13,6 +13,7 @@ import {
   IGroup,
   IColumn,
   IHero,
+  IHeader,
 } from '../../standard';
 import { AdvancedType, BasicType } from '@core/constants';
 import { generateAdvancedContentBlock } from '../generateAdvancedContentBlock';
@@ -26,6 +27,11 @@ export const AdvancedText = generateAdvancedContentBlock<IText>({
 export const AdvancedButton = generateAdvancedContentBlock<IButton>({
   type: AdvancedType.BUTTON,
   baseType: BasicType.BUTTON,
+});
+
+export const AdvancedHeaderWithLogo = generateAdvancedContentBlock<IHeader>({
+  type: AdvancedType.HEADER_WITH_LOGO,
+  baseType: BasicType.HEADER_WITH_LOGO,
 });
 
 export const AdvancedImage = generateAdvancedContentBlock<IImage>({
