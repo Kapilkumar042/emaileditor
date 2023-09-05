@@ -28,7 +28,8 @@
       "@extensions": ["./src"],
       "@extensions/*": ["./src/*"],
       "vikasit-email-core": ["../vikasit-email-core/src/index.tsx"],
-      "vikasit-email-editor": ["../vikasit-email-editor/src/index.tsx"]
+      "vikasit-email-editor": ["../vikasit-email-editor/src/index.tsx"],
+      "vikasit-svg-icons":["../vikasit-email-extensions/src/components/icons/svg"]
     }
   },
   "include": ["./src", "./typings"],

@@ -12,6 +12,7 @@ const ContentBlocks = [
   BasicType.DIVIDER,
 
   BasicType.BUTTON,
+  BasicType.HEADER_WITH_LOGO,
   BasicType.ACCORDION,
   BasicType.CAROUSEL,
   BasicType.NAVBAR,

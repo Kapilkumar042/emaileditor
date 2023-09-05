@@ -18,6 +18,7 @@ export enum BasicType {
   ACCORDION_TITLE = 'accordion-title',
   ACCORDION_TEXT = 'accordion-text',
   HERO = 'hero',
+  HEADER_WITH_LOGO='header-with-logo',
   CAROUSEL = 'carousel',
   NAVBAR = 'navbar',
   SOCIAL = 'social',
@@ -45,6 +46,7 @@ export enum AdvancedType {
   COLUMN = 'advanced_column',
   GROUP = 'advanced_group',
   HERO = 'advanced_hero',
+  HEADER_WITH_LOGO='advanced_header-with-logo',
   PARA = 'advanced_para'
 }
 

@@ -75,6 +75,7 @@
   "Image": "Immagine",
   "Displays a responsive image in your email. It is similar to the HTML \\'&lt;img/&gt;\\' tag. Note that if no width is provided, the image will use the parent column width.": "Visualizza un'immagine reattiva nella tua email. È simile a Html \\ '& lt; img/& gt; \\' tag. Si noti che se non viene fornita alcuna larghezza, l'immagine utilizzerà la larghezza della colonna genitore.",
   "Button": "Pulsante",
+  "HeaderWithLogo":"HeaderWithLogo",
   "Displays a customizable button.": "Visualizza un pulsante personalizzabile.",
   "Hero": "Eroe",
   "This block displays a hero image. It behaves like an \\'section\\' with a single \\'column\\'.": "Questo blocco mostra un'immagine di eroe. Si comporta come una sezione \\ '\\' con una singola colonna \\ '.",

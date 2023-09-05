@@ -53,7 +53,7 @@ export function Blocks() {
             //     <div />
             //   </Space>
             // </Collapse.Item>
-            <h1 className='hidden'></h1>
+            <h1 className='hidden' />
           );
         }
 
