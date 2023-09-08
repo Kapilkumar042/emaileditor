@@ -49,7 +49,7 @@ import {
   BlockMarketManager,
   ExtensionProps,
   MjmlToJson,
-  StandardLayout,
+  StandardLayout, 
 } from 'vikasit-email-extensions';
 import { AutoSaveAndRestoreEmail } from '@demo/components/AutoSaveAndRestoreEmail';
 
@@ -119,7 +119,7 @@ const defaultCategories: ExtensionProps['categories'] = [
       {
         type: AdvancedType.HEADER_WITH_LOGO,
       },
-    ],
+          ],
   },
   {
     label: 'Layout',
@@ -163,7 +163,7 @@ const defaultCategories: ExtensionProps['categories'] = [
         <div
           style={{
             position: 'relative',
-            border: '1px solid #ccc',
+            // border: '1px solid #ccc',
             marginBottom: 20,
             width: '80%',
             marginLeft: 'auto',
@@ -187,6 +187,9 @@ const defaultCategories: ExtensionProps['categories'] = [
             }}
           />
         </div>
+      </BlockAvatarWrapper>,
+      <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
+        <div className="ml-10">Footer</div>
       </BlockAvatarWrapper>,
     ],
   },
