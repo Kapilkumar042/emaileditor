@@ -17,6 +17,7 @@ import { AccordionTitle } from './AccordionTitle';
 import { AccordionText } from './AccordionText';
 import { Carousel } from './Carousel';
 import { Hero } from './Hero';
+import { ImageWithRightText } from './ImageWithRighttext';
 import { Navbar } from './Navbar';
 import { Social } from './Social';
 import { Table } from './Table';
@@ -41,6 +42,7 @@ export const blocks = {
   [BasicType.ACCORDION_TEXT]: AccordionText,
   [BasicType.CAROUSEL]: Carousel,
   [BasicType.HERO]: Hero,
+  [BasicType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText ,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
   [BasicType.TABLE]: Table,
@@ -57,6 +59,7 @@ export const blocks = {
   [AdvancedType.SOCIAL]: Social,
 
   [AdvancedType.HERO]: Hero,
+  // [AdvancedType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText,
   [AdvancedType.WRAPPER]: Wrapper,
   [AdvancedType.SECTION]: Section,
   [AdvancedType.GROUP]: Group,

@@ -1,12 +1,12 @@
 import { Stack } from '@demo/components/Stack';
-import { useFocusIdx } from 'vikasit-email-editor';
-import { AttributesPanelWrapper, ColorPickerField, Height, NumberField, Padding, TextField, Width } from 'vikasit-email-extensions';
-import React, { useCallback } from 'react';
-import { Grid } from '@arco-design/web-react';
+import { useFocusIdx, useEditorProps } from 'vikasit-email-editor';
+import { AttributesPanelWrapper, ColorPickerField, ImageUploaderField, NumberField, TextField } from 'vikasit-email-extensions';
+import React from 'react';
 
 
-export function FooterPanel() {
+export function Panel() {
   const { focusIdx } = useFocusIdx();
+  const { onUploadImage } = useEditorProps();
   return (
     <AttributesPanelWrapper style={{ padding: '20px' }}>
       <Stack vertical>
@@ -16,17 +16,32 @@ export function FooterPanel() {
           max={6}
           name={`${focusIdx}.data.value.quantity`}
         /> */}
+        <ImageUploaderField
+              label={t('src')}
+              labelHidden
+              name={`${focusIdx}.attributes.src`}
+              helpText={t(
+                'The image suffix should be .jpg, jpeg, png, gif, etc. Otherwise, the picture may not be displayed normally.',
+              )}
+              uploadHandler={onUploadImage}
+            />
         <TextField
           label='Title'
           name={`${focusIdx}.data.value.title`}
           inline
           alignment='center'
         />
-        {/* <TextField
+        <TextField
           label='Button text'
           name={`${focusIdx}.data.value.buttonText`}
           inline
           alignment='center'
+        />
+        {/* <TextField
+          label='Button rounded'
+          name={`${focusIdx}.data.value.button-radius`}
+          inline
+          border-radius='20px'
         /> */}
         <ColorPickerField
           label='Background color'
@@ -34,19 +49,6 @@ export function FooterPanel() {
           inline
           alignment='center'
         />
-        {/* <Grid.Row>
-              <Grid.Col span={11}>
-                <Width />
-              </Grid.Col>
-              <Grid.Col
-                offset={1}
-                span={11}
-              >
-                <Height />
-              </Grid.Col>
-            </Grid.Row>
-
-            <Padding /> */}
         <ColorPickerField
           label='Title color'
           name={`${focusIdx}.attributes.title-color`}
@@ -55,43 +57,29 @@ export function FooterPanel() {
         />
         <ColorPickerField
           label='Location name color'
-          name={`${focusIdx}.attributes.location-color`}
+          name={`${focusIdx}.attributes.product-name-color`}
           inline
           alignment='center'
         />
         <ColorPickerField
           label='message color'
-          name={`${focusIdx}.attributes.message-color`}
+          name={`${focusIdx}.attributes.product-price-color`}
           inline
           alignment='center'
         />
         <ColorPickerField
-          label='resion color'
-          name={`${focusIdx}.attributes.resion-color`}
-          inline
-          alignment='center'
-        />
-        
-        <ColorPickerField
-          label='buttonText color'
-          name={`${focusIdx}.attributes.buttonText-color`}
-          inline
-          alignment='center'
-        />
-        {/* <ColorPickerField
           label='Button color'
           name={`${focusIdx}.attributes.button-color`}
           inline
           alignment='center'
-        /> */}
-        {/* <ColorPickerField
+        />
+        <ColorPickerField
           label='Button text color'
           name={`${focusIdx}.attributes.button-text-color`}
           inline
           alignment='center'
-        /> */}
+        />
       </Stack>
     </AttributesPanelWrapper>
   );
 }
-

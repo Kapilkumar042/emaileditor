@@ -19,6 +19,7 @@ export enum BasicType {
   ACCORDION_TEXT = 'accordion-text',
   HERO = 'hero',
   HEADER_WITH_LOGO='header-with-logo',
+  IMAGE_WITH_RIGHT_TEXT='Image-With-Right-Text',
   CAROUSEL = 'carousel',
   NAVBAR = 'navbar',
   SOCIAL = 'social',
@@ -47,6 +48,7 @@ export enum AdvancedType {
   GROUP = 'advanced_group',
   HERO = 'advanced_hero',
   HEADER_WITH_LOGO='advanced_header-with-logo',
+  IMAGE_WITH_RIGHT_TEXT='Image-With-Right-Text',
   PARA = 'advanced_para'
 }
 
