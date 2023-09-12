@@ -43,21 +43,60 @@ export const ImageWithRightText = createBlock<IImageWithRightText>({
       },
       children: [
         {
-            type: 'image',
-            data: {
-              value: {
-                content: 'Get Your Order Here!',
-              },
+          type:'section',
+          data: {
+            value: {
+              noWrap: false,
             },
-            attributes: {
-              align: 'center',
-              height: 'auto',
-              padding: '10px 25px 10px 25px',
-              src: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
-            },
-            children: [],
           },
-        {
+          attributes: {
+            padding: '0px 0px 0px 0px',
+            'background-repeat': 'repeat',
+            'background-size': 'auto',
+            'background-position': 'top center',
+            border: 'none',
+            direction: 'ltr',
+            'text-align': 'center',
+          },
+          children: [
+            {
+              type:'column',
+              data: {
+                value: {},
+              },
+              attributes: {
+                padding: '0px 0px 0px 0px',
+                border: 'none',
+                'vertical-align': 'top',
+              },
+              children: [
+                {
+                      type: 'image',
+                      data: {
+                        value: {},
+                      },
+                      attributes: {
+                        align: 'center',
+                        height: '200px',
+                        padding: '10px 25px 10px 25px',
+                        src: 'https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+                      },
+                      children: [],
+                    },
+              ],
+            },
+            {
+              type:'column',
+              data: {
+                value: {},
+              },
+              attributes: {
+                padding: '0px 0px 0px 0px',
+                border: 'none',
+                'vertical-align': 'top',
+              },
+              children: [
+                {
           type: 'text',
           data: {
             value: {
@@ -65,15 +104,15 @@ export const ImageWithRightText = createBlock<IImageWithRightText>({
             },
           },
           attributes: {
-            padding: '10px 25px 10px 25px',
-            align: 'center',
+            padding: '0px 0px 0px 0px',
+            align: 'left',
             color: '#000000',
             'font-size': '16px',
             'line-height': '45px',
           },
           children: [],
         },
-        {
+                 {
           type: 'text',
           data: {
             value: {
@@ -82,13 +121,13 @@ export const ImageWithRightText = createBlock<IImageWithRightText>({
             },
           },
           attributes: {
-            align: 'center',
+            align: 'left',
             'background-color': '#414141',
             color: '#000000',
             'font-weight': 'normal',
             'border-radius': '3px',
-            padding: '10px 25px 10px 25px',
-            'inner-padding': '10px 25px 10px 25px',
+            padding: '10px 25px 10px 5px',
+            'inner-padding': '10px 25px 10px 5px',
             'line-height': '1.5',
             target: '_blank',
             'vertical-align': 'middle',
@@ -100,29 +139,33 @@ export const ImageWithRightText = createBlock<IImageWithRightText>({
           children: [],
         },
         {
-          type: 'button',
-          data: {
-            value: {
-              content: 'Get Your Order Here!',
+            type: 'button',
+            data: {
+              value: {
+                content: 'Get Your Order Here!',
+              },
             },
+            attributes: {
+              align: 'left',
+              'background-color': '#f3a333',
+              color: '#ffffff',
+              'font-size': '13px',
+              'font-weight': 'normal',
+              'border-radius': '30px',
+              padding: '10px 25px 10px 5px',
+              'inner-padding': '10px 25px 10px 5px',
+              'line-height': '120%',
+              target: '_blank',
+              'vertical-align': 'middle',
+              border: 'none',
+              'text-align': 'center',
+              href: '#',
+            },
+            children: [],
           },
-          attributes: {
-            align: 'center',
-            'background-color': '#f3a333',
-            color: '#ffffff',
-            'font-size': '13px',
-            'font-weight': 'normal',
-            'border-radius': '30px',
-            padding: '10px 25px 10px 25px',
-            'inner-padding': '10px 25px 10px 25px',
-            'line-height': '120%',
-            target: '_blank',
-            'vertical-align': 'middle',
-            border: 'none',
-            'text-align': 'center',
-            href: '#',
-          },
-          children: [],
+              ],
+            },
+          ],
         },
       ],
     };
