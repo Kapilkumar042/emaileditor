@@ -11,6 +11,7 @@ import { IWrapper, Wrapper } from './Wrapper';
 import { ISpacer, Spacer } from './Spacer';
 import { Carousel, ICarousel } from './Carousel';
 import { Hero, IHero } from './Hero';
+import { ImageWithRightText, IImageWithRightText } from './ImageWithRightText';
 import { Navbar, INavbar } from './Navbar';
 import { ISocial, Social } from './Social';
 import { Raw, IRaw } from './Raw';
@@ -22,7 +23,6 @@ import { AccordionTitle, IAccordionTitle } from './AccordionTitle';
 import { AccordionText, IAccordionText } from './AccordionText';
 import { Table, ITable } from './Table';
 import { BasicType } from '@core/constants';
-
 export const standardBlocks = {
   [BasicType.PAGE]: Page,
   [BasicType.SECTION]: Section,
@@ -40,6 +40,7 @@ export const standardBlocks = {
   [BasicType.HERO]: Hero,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
+  [BasicType.IMAGE_WITH_RIGHT_TEXT]:ImageWithRightText,
 
   // spacial block, render string
   [BasicType.TEMPLATE]: Template,
@@ -69,6 +70,7 @@ export type {
   ISpacer,
   ICarousel,
   IHero,
+  IImageWithRightText,
   ISocial,
   INavbar,
   IRaw,

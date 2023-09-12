@@ -119,6 +119,9 @@ const defaultCategories: ExtensionProps['categories'] = [
       {
         type: AdvancedType.HEADER_WITH_LOGO,
       },
+      {
+        type: AdvancedType.IMAGE_WITH_RIGHT_TEXT,
+      },
           ],
   },
   {
@@ -191,6 +194,9 @@ const defaultCategories: ExtensionProps['categories'] = [
       <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
         <div className="ml-10">Footer</div>
       </BlockAvatarWrapper>,
+      <BlockAvatarWrapper type={CustomBlocksType.IMAGE_WITH_RIGHT_TEXT}>
+      <div className="ml-10">ImageWithText</div>
+    </BlockAvatarWrapper>,
     ],
   },
 ];

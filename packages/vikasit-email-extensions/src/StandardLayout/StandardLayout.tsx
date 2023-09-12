@@ -50,6 +50,9 @@ const defaultCategories: ExtensionProps['categories'] = [
       },
       {
         type:AdvancedType.HEADER_WITH_LOGO,
+      },
+      {
+        type:AdvancedType.IMAGE_WITH_RIGHT_TEXT,
       }
     ],
   },
