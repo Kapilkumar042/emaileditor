@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <bx:guide x="19.009" y="27.864" angle="0"/>
-    <bx:guide x="18" y="26.966" angle="0"/>
-    <bx:guide x="14.69" y="5.989" angle="90"/>
-    <bx:guide x="3.975" y="7.303" angle="0"/>
-    <bx:guide x="11.336" y="17.989" angle="90"/>
-    <bx:guide x="4.764" y="21.887" angle="0"/>
-    <bx:guide x="18.283" y="21.416" angle="0"/>
-    <bx:guide x="37.996" y="9.024" angle="0"/>
-    <bx:guide x="57.048" y="15.015" angle="0"/>
-    <bx:guide x="20.273" y="10.229" angle="90"/>
-  </defs>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <title>icons/editor/element-style-3</title>
   <path style="fill: none; paint-order: stroke; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 4.552 15.863 L 8.718 11.281 L 13.609 15.713 L 11.972 13.962 L 14.155 11.927 L 18.42 15.596"/>
   <path style="paint-order: stroke; stroke-width: 1.5px; fill: none; stroke: rgb(132, 146, 166);" d="M 23.521 15.864 L 27.687 11.282 L 32.578 15.714 L 30.941 13.963 L 33.124 11.928 L 37.389 15.597"/>

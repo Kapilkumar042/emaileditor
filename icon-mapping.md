@@ -1,0 +1,32 @@
+# Content section
+1. Title="block-title-single-tone-v1"
+2. Image="block-single-image-v1-single-tone"
+3. Button="block-button-v1-single-tone"
+4. Social="block-social-single-tone-v1"
+5. Divider="block-divider-single-tone-v1"
+6. Spacer="block-horizontal-spacing-single-tone-v1"
+7. Hero="block-hero-single-tone-v1"
+8. Wrapper="block-wrapper-single-tone-v1"
+9. Header with Logo="block-header-single-tone-v1"
+10. Footer="block-footer-single-tone-v1"
+11. Shadow="block-shadow-single-tone-v1"
+12. Text="block-full-text-single-tone-v1"
+
+# Custom section
+1. Image Text V="block-image-text-vertical-single-tone-v1"
+2. Image Text H="block-image-text-horizontal-single-tone-v1"
+3. Image Text 3X="block-image-text-3x-v1-single-tone"
+4. Image Image 2X="block-image-2x-v2-single-tone"
+5. Image Image 3X="block-image-3x-v2-single-tone"
+6. Text Text="block-text-text-horizontal-single-tone-v1"
+
+# Layout
+1. 2Col 25%-75% ="layout-25-75-single-tone-v1"
+2. 2Col 75%-25% ="layout-75-25-single-tone-v1"
+3. 2Col 50%-50% ="layout-50-50-single-tone-v1"
+4. 2Col 33%-67% ="layout-33-67-single-tone-v1"
+5. 2Col 67%-33% ="layout-67-33-single-tone-v1"
+6. 3Col 25%-25%-50%="layout-25-25-50-single-tone-v1"
+7. 3Col 50%-25%-25%="layout-50-25-25-single-tone-v1"
+8. 3Col 33%-33%-33%="layout-33-33-33-single-tone-v1"
+9. 4Col 25%-25%-25%-25%="layout-25-25-25-25-single-tone-v1"
