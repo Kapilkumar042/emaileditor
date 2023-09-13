@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <defs>
-    <bx:guide x="10.141" y="14.364" angle="0"/>
-    <bx:guide x="16.123" y="14.421" angle="0"/>
-    <bx:guide x="27.007" y="13.035" angle="0"/>
-    <bx:guide x="32.998" y="14.952" angle="0"/>
-    <bx:guide x="43.874" y="12.915" angle="0"/>
-    <bx:guide x="49.882" y="13.556" angle="0"/>
-    <bx:guide x="6.262" y="20.712" angle="0"/>
-    <bx:guide x="53.739" y="21.428" angle="0"/>
-    <bx:guide x="30.738" y="12.949" angle="90"/>
-    <bx:guide x="35.189" y="27.052" angle="90"/>
-    <bx:guide x="29.999" y="14.128" angle="0"/>
     <linearGradient gradientUnits="userSpaceOnUse" x1="30.011" y1="12" x2="30.011" y2="28.004" id="gradient-0">
       <stop offset="0" style="stop-color: rgb(121, 192, 218);"/>
       <stop offset="1" style="stop-color: rgb(14, 92, 128);"/>

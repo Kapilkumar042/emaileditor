@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <bx:guide x="34.253" y="12.978" angle="0"/>
-    <bx:guide x="36.644" y="12.991" angle="90"/>
-    <bx:guide x="55.045" y="12.98" angle="0"/>
-    <bx:guide x="54.003" y="23.017" angle="0"/>
-    <bx:guide x="29.859" y="8.012" angle="90"/>
-    <bx:guide x="30.001" y="9.937" angle="0"/>
-    <bx:guide x="26.017" y="31.999" angle="90"/>
-    <bx:guide x="6.006" y="29.468" angle="0"/>
-    <bx:guide x="39.976" y="14.993" angle="0"/>
-    <bx:guide x="4.982" y="6.824" angle="0"/>
-  </defs>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <title>icons/editor/element-style-2</title>
   <path style="fill: none; paint-order: stroke; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 5.955 23.154 L 12.246 17.009 L 20.922 25.031 L 18.406 22.571 L 22.47 18.655 L 28.371 23.961"/>
   <g id="icons/editor/element-style-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="matrix(1, 0, 0, 1, -1.024, 0)">

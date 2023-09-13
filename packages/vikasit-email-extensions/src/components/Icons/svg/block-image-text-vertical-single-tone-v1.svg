@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <bx:guide x="25.156" y="3.967" angle="90"/>
-    <bx:guide x="14.997" y="11.468" angle="0"/>
-    <bx:guide x="44.997" y="10.616" angle="0"/>
-    <bx:guide x="26.798" y="20.03" angle="90"/>
-    <bx:guide x="44.742" y="25.004" angle="0"/>
-    <bx:guide x="15.257" y="24.878" angle="0"/>
-    <bx:guide x="44.107" y="29.27" angle="0"/>
-  </defs>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <title>icons/editor/element-style-1</title>
   <g id="icons/editor/element-style-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <path style="fill: none; paint-order: stroke; stroke-width: 1.5px; stroke: rgb(132, 146, 166);" d="M 15.947 15.17 L 23.022 9.287 L 33.324 17.464 L 29.793 14.625 L 35.16 9.912 L 44.211 16.919"/>
