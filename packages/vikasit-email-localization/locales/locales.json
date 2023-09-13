@@ -253,7 +253,8 @@
     "Raw": "Raw",
     "HeaderTimeButton":"Last save 11:30 AM",
     "HeaderPreviewButton":"Preivew & Test",
-    "HeaderSaveButton":"Save & Publish"
+    "HeaderSaveButton":"Save & Publish",
+    "HeaderWithLogo":"HeaderWithLogo"
   },
   "zh-Hans": {
     "undo": "撤消",

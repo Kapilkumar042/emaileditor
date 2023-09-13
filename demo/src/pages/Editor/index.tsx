@@ -15,7 +15,7 @@ import {
   Modal,
   PageHeader,
   Select,
-  Layout
+  Layout,
 } from '@arco-design/web-react';
 import { useQuery } from '@demo/hooks/useQuery';
 import { useHistory } from 'react-router-dom';
@@ -49,7 +49,7 @@ import {
   BlockMarketManager,
   ExtensionProps,
   MjmlToJson,
-  StandardLayout,
+  StandardLayout, 
 } from 'vikasit-email-extensions';
 import { AutoSaveAndRestoreEmail } from '@demo/components/AutoSaveAndRestoreEmail';
 
@@ -70,6 +70,10 @@ import localesData from 'vikasit-email-localization/locales/locales.json';
 import { Uploader } from '@demo/utils/Uploader';
 import axios from 'axios';
 import enUS from '@arco-design/web-react/es/locale/en-US';
+import TextIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
+import ButtonIcon from '../../Icons/svg/block-button-v1-single-tone.svg';
+import SocialIcon from '../../Icons/svg/block-social-single-tone-v1.svg';
+import ImageIcon from '../../Icons/svg/block-image-text-vertical-single-tone-v1.svg';
 
 console.log(localesData);
 
@@ -80,30 +84,45 @@ const defaultCategories: ExtensionProps['categories'] = [
     blocks: [
       {
         type: AdvancedType.TEXT,
+        iconUrl: TextIcon,
       },
       {
         type: AdvancedType.IMAGE,
+        iconUrl: ImageIcon,
+
         payload: { attributes: { padding: '0px 0px 0px 0px' } },
       },
       {
         type: AdvancedType.BUTTON,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.SOCIAL,
+        iconUrl: SocialIcon,
       },
       {
         type: AdvancedType.DIVIDER,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.SPACER,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.HERO,
+        iconUrl: ButtonIcon,
       },
       {
         type: AdvancedType.WRAPPER,
+        iconUrl: TextIcon,
       },
-    ],
+      {
+        type: AdvancedType.HEADER_WITH_LOGO,
+      },
+      {
+        type: AdvancedType.IMAGE_WITH_RIGHT_TEXT,
+      },
+          ],
   },
   {
     label: 'Layout',
@@ -147,7 +166,7 @@ const defaultCategories: ExtensionProps['categories'] = [
         <div
           style={{
             position: 'relative',
-            border: '1px solid #ccc',
+            // border: '1px solid #ccc',
             marginBottom: 20,
             width: '80%',
             marginLeft: 'auto',
@@ -155,9 +174,7 @@ const defaultCategories: ExtensionProps['categories'] = [
           }}
         >
           <img
-            src={
-              '#'
-            }
+            src={'#'}
             style={{
               maxWidth: '100%',
             }}
@@ -174,6 +191,12 @@ const defaultCategories: ExtensionProps['categories'] = [
           />
         </div>
       </BlockAvatarWrapper>,
+      <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
+        <div className="ml-10">Footer</div>
+      </BlockAvatarWrapper>,
+      <BlockAvatarWrapper type={CustomBlocksType.IMAGE_WITH_RIGHT_TEXT}>
+      <div className="ml-10">ImageWithText</div>
+    </BlockAvatarWrapper>,
     ],
   },
 ];
@@ -595,6 +618,7 @@ function replaceStandardBlockToAdvancedBlock(blockData: IBlockData) {
     [BasicType.SECTION]: AdvancedType.SECTION,
     [BasicType.GROUP]: AdvancedType.GROUP,
     [BasicType.COLUMN]: AdvancedType.COLUMN,
+    [BasicType.HEADER_WITH_LOGO]:AdvancedType.HEADER_WITH_LOGO,
   };
 
   if (map[blockData.type]) {

@@ -5,6 +5,7 @@ import { Text } from './Text';
 import { Image } from './Image';
 import { Group } from './Group';
 import { Button } from './Button';
+import { HeaderWithLogo }  from './HeaderWithLogo';
 import { Divider } from './Divider';
 import { Wrapper } from './Wrapper';
 import { Spacer } from './Spacer';
@@ -16,6 +17,7 @@ import { AccordionTitle } from './AccordionTitle';
 import { AccordionText } from './AccordionText';
 import { Carousel } from './Carousel';
 import { Hero } from './Hero';
+import { ImageWithRightText } from './ImageWithRighttext';
 import { Navbar } from './Navbar';
 import { Social } from './Social';
 import { Table } from './Table';
@@ -29,6 +31,7 @@ export const blocks = {
   [BasicType.IMAGE]: Image,
   [BasicType.GROUP]: Group,
   [BasicType.BUTTON]: Button,
+  [BasicType.HEADER_WITH_LOGO]:HeaderWithLogo,
   [BasicType.DIVIDER]: Divider,
   [BasicType.WRAPPER]: Wrapper,
   [BasicType.SPACER]: Spacer,
@@ -39,6 +42,7 @@ export const blocks = {
   [BasicType.ACCORDION_TEXT]: AccordionText,
   [BasicType.CAROUSEL]: Carousel,
   [BasicType.HERO]: Hero,
+  [BasicType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText ,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
   [BasicType.TABLE]: Table,
@@ -46,6 +50,7 @@ export const blocks = {
   [AdvancedType.TEXT]: Text,
   [AdvancedType.IMAGE]: Image,
   [AdvancedType.BUTTON]: Button,
+  [AdvancedType.HEADER_WITH_LOGO]:HeaderWithLogo,
   [AdvancedType.DIVIDER]: Divider,
   [AdvancedType.SPACER]: Spacer,
   [AdvancedType.ACCORDION]: Accordion,
@@ -54,6 +59,7 @@ export const blocks = {
   [AdvancedType.SOCIAL]: Social,
 
   [AdvancedType.HERO]: Hero,
+  // [AdvancedType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText,
   [AdvancedType.WRAPPER]: Wrapper,
   [AdvancedType.SECTION]: Section,
   [AdvancedType.GROUP]: Group,

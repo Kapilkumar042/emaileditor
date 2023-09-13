@@ -2,7 +2,14 @@ import { Collapse, Grid, Space, Typography } from '@arco-design/web-react';
 import { AdvancedType, BlockManager, IBlockData } from 'vikasit-email-core';
 import { BlockAvatarWrapper, IconFont } from 'vikasit-email-editor';
 import React, { useMemo, useState } from 'react';
-import { IconCaretRight, IconCaretUp, IconDown, IconUp } from '@arco-design/web-react/icon';
+import dow from '../../../src/components/Icons/svg/block-3icons-gradient-v1.svg';
+// import dow from "./download.jpeg";
+import {
+  IconCaretRight,
+  IconCaretUp,
+  IconDown,
+  IconUp,
+} from '@arco-design/web-react/icon';
 import { getIconNameByBlockType } from '@extensions/utils/getIconNameByBlockType';
 import styles from './index.module.scss';
 import { useExtensionProps } from '@extensions/components/Providers/ExtensionProvider';
@@ -19,8 +26,8 @@ export function Blocks() {
       defaultActiveKey={defaultActiveKey}
       // style={{ paddingBottom: 30, minHeight: '100%' , textAlign:"center", alignItems:"center", }}
       expandIconPosition='right'
-      expandIcon={<IconDown/>}
-      className={styles["arco-collapse-item-header-title"]}
+      expandIcon={<IconDown />}
+      className={styles['arco-collapse-item-header-title']}
     >
       {categories.map((cat, index) => {
         if (cat.displayType === 'column') {
@@ -46,7 +53,7 @@ export function Blocks() {
             //     <div />
             //   </Space>
             // </Collapse.Item>
-            <h1 className='hidden'></h1>
+            <h1 className='hidden' />
           );
         }
 
@@ -57,7 +64,7 @@ export function Blocks() {
               contentStyle={{ padding: 0, paddingBottom: 0, paddingTop: 20 }}
               name={cat.label}
               header={cat.label}
-              className={styles["arco-collapse-item-header-title"]}
+              className={styles['arco-collapse-item-header-title']}
             >
               <Grid.Row>
                 {cat.blocks.map((item, index) => {
@@ -79,6 +86,7 @@ export function Blocks() {
                 return (
                   <BlockItem
                     key={index}
+                    iconUrl={item.iconUrl}
                     {...(item as any)}
                   />
                 );
@@ -96,11 +104,13 @@ function BlockItem({
   payload,
   title,
   filterType,
+  iconUrl,
 }: {
   type: string;
   payload?: Partial<IBlockData>;
   title?: string;
   filterType: string | undefined;
+  iconUrl: string;
 }) {
   const block = BlockManager.getBlockByType(type);
 
@@ -113,7 +123,7 @@ function BlockItem({
         <div className={styles.blockItemContainer}>
           <IconFont
             style={{ fontSize: 20 }}
-            iconName={getIconNameByBlockType(type)}
+            iconUrl={iconUrl}
           />
           <Typography.Text style={{ marginTop: 10 }}>
             {title || block?.name}
@@ -123,5 +133,3 @@ function BlockItem({
     </div>
   );
 }
-
-

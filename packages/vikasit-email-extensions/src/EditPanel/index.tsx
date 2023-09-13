@@ -5,7 +5,7 @@ import { AdvancedType } from 'vikasit-email-core';
 import React, { useMemo, useState } from 'react';
 import { Blocks } from './Blocks';
 import { BlockLayer } from '@extensions/BlockLayer';
-import { Layouts} from '../EditPanel/Layout/index'
+import { Layouts } from '../EditPanel/Layout/index'
 import { FullHeightOverlayScrollbars } from '@extensions/components/FullHeightOverlayScrollbars';
 import styles from './index.module.scss';
 import { ConfigurationDrawer } from './ConfigurationDrawer';
@@ -30,7 +30,6 @@ export function EditPanel({
     [categories],
   );
 
-  
   return (
     <Layout.Sider
       className={styles.blocksPanel}
@@ -70,8 +69,8 @@ export function EditPanel({
             </div>
           </FullHeightOverlayScrollbars>
         </TabPane>
-        </Tabs>
-      
+      </Tabs>
+
       {!compact && (
         <ConfigurationDrawer
           height={height}

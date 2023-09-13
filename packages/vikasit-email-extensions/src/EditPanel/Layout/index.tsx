@@ -1,3 +1,4 @@
+//layout-to-update
 import { Collapse, Grid, Space, Typography } from '@arco-design/web-react';
 import { AdvancedType, BlockManager, IBlockData } from 'vikasit-email-core';
 import { BlockAvatarWrapper, IconFont } from 'vikasit-email-editor';
@@ -49,11 +50,14 @@ export function Layouts() {
                     // title={item.title || ''}
                     // columns={item.payload}
                     // />
-                    <LayoutItem
-                      key={item.title}
-                      title={item.title || ''}
-                      columns={item.payload}
-                    />
+                    <>
+                      {' '}
+                      <LayoutItem
+                        key={item.title}
+                        title={item.title || ''}
+                        columns={item.payload}
+                      />
+                    </>
                   );
                 })}
               </Grid.Row>
@@ -100,17 +104,9 @@ function LayoutItem({ columns, title }: { columns: string[][]; title: string }) 
                 <div className={layoutstyles.blockItemContainer}>
                   {item.map((column, index) => {
                     return (
-                      <div
-                        key={index}
-                        //   style={{
-                        //     borderRight:
-                        //       index === item.length - 1
-                        //         ? undefined
-                        //         : '1px solid rgb(85, 85, 85)',
-                        //     height: '100%',
-                        //     width: column,
-                        //   }}
-                      />
+                      <>
+                        <div key={index} />
+                      </>
                     );
                   })}
                 </div>
