@@ -24,6 +24,7 @@ import {
   AdvancedHero,
   AdvancedHeaderWithLogo
 } from './blocks';
+import { VERTICAL } from '../standard/VerticalImage';
 
 export const advancedBlocks = {
   [AdvancedType.TEXT]: AdvancedText,
@@ -42,6 +43,8 @@ export const advancedBlocks = {
   [AdvancedType.GROUP]: AdvancedGroup,
   [AdvancedType.COLUMN]: AdvancedColumn,
   [AdvancedType.HERO]: AdvancedHero,
+  [AdvancedType.VERTICAL]: VERTICAL,
+
 };
 
 export { Operator, OperatorSymbol };

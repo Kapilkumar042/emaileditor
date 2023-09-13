@@ -14,7 +14,11 @@ import {
   IColumn,
   IHero,
   IHeader,
+
   IImageWithRightText,
+
+  IVerticalImage,
+
 } from '../../standard';
 import { AdvancedType, BasicType } from '@core/constants';
 import { generateAdvancedContentBlock } from '../generateAdvancedContentBlock';
@@ -108,6 +112,17 @@ export const AdvancedHero = generateAdvancedLayoutBlock<IHero>({
     BasicType.WRAPPER,
     AdvancedType.WRAPPER,
     BasicType.PAGE,
+  ],
+
+});
+export const Vertical_TextImage = generateAdvancedLayoutBlock<IVerticalImage>({
+  type: AdvancedType.VERTICAL,
+  baseType: BasicType.VERTICAL,
+  validParentType: [
+    BasicType.WRAPPER,
+    AdvancedType.WRAPPER,
+    BasicType.PAGE,
+    BasicType.COLUMN
   ],
 });
 

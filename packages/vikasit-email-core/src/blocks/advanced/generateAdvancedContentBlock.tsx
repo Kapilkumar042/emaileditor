@@ -20,22 +20,26 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
       BasicType.COLUMN,
       BasicType.GROUP,
       BasicType.HERO,
+
       BasicType.IMAGE_WITH_RIGHT_TEXT,
+
+      BasicType.VERTICAL,
 
       AdvancedType.WRAPPER,
       AdvancedType.COLUMN,
       AdvancedType.GROUP,
       AdvancedType.HERO,
+
       AdvancedType.IMAGE_WITH_RIGHT_TEXT,
+
+      AdvancedType.VERTICAL,
     ],
-    getContent: (params) => {
+    getContent: params => {
       const { data, idx, mode, context, index } = params;
 
       const previewClassName =
         mode === 'testing'
-          ? classnames(
-              index === 0 && idx && getPreviewClassName(idx, data.type)
-            )
+          ? classnames(index === 0 && idx && getPreviewClassName(idx, data.type))
           : '';
 
       const blockData = {
@@ -43,10 +47,7 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
         type: option.baseType,
         attributes: {
           ...data.attributes,
-          'css-class': classnames(
-            data.attributes['css-class'],
-            previewClassName
-          ),
+          'css-class': classnames(data.attributes['css-class'], previewClassName),
         },
       };
 
@@ -68,7 +69,10 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
         parentBlockData.type === AdvancedType.WRAPPER
       ) {
         return (
-          <Section padding='0px' text-align='left'>
+          <Section
+            padding='0px'
+            text-align='left'
+          >
             <Column>{children}</Column>
           </Section>
         );
