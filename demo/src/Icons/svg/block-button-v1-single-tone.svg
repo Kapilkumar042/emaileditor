@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <bx:guide x="51.005" y="12.417" angle="0"/>
-    <bx:guide x="43.846" y="10" angle="90"/>
-    <bx:guide x="40.297" y="30.012" angle="90"/>
-    <bx:guide x="8.987" y="15.459" angle="0"/>
-    <bx:guide x="40.693" y="11.48" angle="90"/>
-    <bx:guide x="45.51" y="28.508" angle="90"/>
-    <bx:guide x="10.569" y="23.848" angle="0"/>
-    <bx:guide x="23.269" y="18.957" angle="90"/>
-    <bx:guide x="23.208" y="21.987" angle="90"/>
-  </defs>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <title>icons/editor/element-button</title>
   <g id="icons/editor/element-button" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
     <path d="M 49.611 10 C 51.009 10 51.005 9.988 51.005 11.701 L 51.005 28.306 C 51.005 30.019 51 30.012 49.602 30.012 L 10.38 30.012 C 8.982 30.012 8.987 30.002 8.987 28.289 L 8.987 11.701 C 8.987 9.988 8.982 10 10.38 10 L 49.611 10 Z M 48.844 11.48 L 11.03 11.48 C 10.565 11.48 10.627 11.473 10.569 12.329 L 10.569 12.409 L 10.558 27.631 C 10.558 28.52 10.575 28.437 11.043 28.508 L 11.03 28.508 L 49.019 28.508 C 49.484 28.508 49.419 28.501 49.477 27.645 L 49.477 27.49 L 49.467 12.376 C 49.467 11.487 49.475 11.551 49.007 11.48 C 49.038 11.48 49.485 11.48 48.844 11.48 Z M 43.576 18.957 C 43.81 18.957 44 20.224 44 20.5 C 44 20.745 43.85 21.945 43.652 21.987 L 43.576 21.987 L 16.424 21.987 C 16.19 21.987 16 20.776 16 20.5 C 16 20.255 16.15 18.999 16.348 18.957 L 16.424 18.957 L 43.576 18.957 Z" id="Combined-Shape" fill="#8492A6"/>

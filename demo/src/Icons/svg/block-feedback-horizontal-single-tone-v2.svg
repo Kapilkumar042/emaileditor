@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
-  <defs>
-    <bx:guide x="54.002" y="17.009" angle="0"/>
-    <bx:guide x="53.527" y="11.415" angle="90"/>
-    <bx:guide x="5.92" y="15.586" angle="0"/>
-    <bx:guide x="34.263" y="11.35" angle="0"/>
-    <bx:guide x="37.044" y="13.649" angle="90"/>
-    <bx:guide x="35.877" y="11.983" angle="90"/>
-    <bx:guide x="38.754" y="30.811" angle="90"/>
-    <bx:guide x="44.004" y="29.009" angle="90"/>
-    <bx:guide x="31.038" y="20.047" angle="90"/>
-  </defs>
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <title>icons/editor/element-text</title>
   <g transform="matrix(0.003929, 0, 0, -0.003929, 5.92, 30.188337)" fill="#000000" stroke="none" style="">
     <path d="M1888 5099 c-23 -12 -46 -35 -58 -59 -18 -36 -20 -58 -20 -288 0 -266 -7 -330 -47 -432 -81 -204 -266 -362 -458 -392 -39 -6 -76 -12 -82 -14 -10 -3 -13 -162 -13 -754 l0 -750 51 0 c38 0 58 -6 82 -24 18 -13 55 -37 83 -54 l51 -30 98 247 c133 333 157 385 220 466 102 133 242 224 425 277 34 10 150 13 465 13 453 0 497 -4 703 -60 48 -14 90 -21 93 -17 4 4 17 34 29 67 43 117 36 266 -19 374 -30 58 -116 146 -175 180 -91 52 -146 61 -388 61 l-218 0 0 265 c0 204 -4 284 -16 343 -61 294 -292 525 -586 586 -103 21 -174 20 -220 -5z" style="fill: rgb(132, 146, 166);"/>

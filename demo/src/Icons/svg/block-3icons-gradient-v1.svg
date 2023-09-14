@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+<svg width="60px" height="40px" viewBox="0 0 60 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://vikasit.com">
   <defs>
-    <bx:guide x="54.002" y="17.009" angle="0"/>
-    <bx:guide x="53.527" y="11.415" angle="90"/>
-    <bx:guide x="5.92" y="15.586" angle="0"/>
-    <bx:guide x="34.263" y="11.35" angle="0"/>
-    <bx:guide x="37.044" y="13.649" angle="90"/>
-    <bx:guide x="35.877" y="11.983" angle="90"/>
-    <bx:guide x="38.754" y="30.811" angle="90"/>
-    <bx:guide x="44.004" y="29.009" angle="90"/>
-    <bx:guide x="31.038" y="20.047" angle="90"/>
-    <bx:guide x="19.992" y="18.4" angle="0"/>
-    <bx:guide x="29.987" y="16.441" angle="0"/>
-    <bx:guide x="22.992" y="18.595" angle="0"/>
-    <bx:guide x="39.925" y="19.295" angle="0"/>
-    <bx:guide x="25.029" y="18.585" angle="0"/>
     <linearGradient gradientUnits="userSpaceOnUse" x1="-12.954" y1="-25.485" x2="-12.954" y2="-11.413" id="gradient-0">
       <stop offset="0" style="stop-color: rgb(14, 92, 128);"/>
       <stop offset="1" style="stop-color: rgb(121, 192, 218);"/>
