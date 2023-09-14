@@ -16,6 +16,7 @@ import { ImageWithRightText, IImageWithRightText } from './ImageWithRightText';
 
 import { IVerticalImage, VERTICAL } from './VerticalImage';
 
+import { ImageWith3VerticalText, IImageWith3VerticalText } from './ImageWith3VerticalText';
 import { Navbar, INavbar } from './Navbar';
 import { ISocial, Social } from './Social';
 import { Raw, IRaw } from './Raw';
@@ -48,6 +49,7 @@ export const standardBlocks = {
   [BasicType.IMAGE_WITH_RIGHT_TEXT]: ImageWithRightText,
 
   [BasicType.VERTICAL]: VERTICAL,
+  [BasicType.IMAGE_WITH_3_VERTICAL_TEXT]:ImageWith3VerticalText,
 
   // spacial block, render string
   [BasicType.TEMPLATE]: Template,
@@ -78,6 +80,7 @@ export type {
   ICarousel,
   IHero,
   IImageWithRightText,
+  IImageWith3VerticalText,
   ISocial,
   INavbar,
   IRaw,

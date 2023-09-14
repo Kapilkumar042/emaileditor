@@ -23,6 +23,7 @@ import { ImageWithRightText } from './ImageWithRighttext';
 import { VerticalImage } from './VerticalImage';
 
 
+import { ImageWith3VerticalText } from './ImageWith3VerticalText';
 import { Navbar } from './Navbar';
 import { Social } from './Social';
 import { Table } from './Table';
@@ -54,6 +55,7 @@ export const blocks = {
 
 
 
+  [BasicType.IMAGE_WITH_3_VERTICAL_TEXT] : ImageWith3VerticalText,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
   [BasicType.TABLE]: Table,

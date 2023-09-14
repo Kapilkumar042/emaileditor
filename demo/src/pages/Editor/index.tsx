@@ -127,7 +127,10 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.VERTICAL,
         iconUrl: ButtonIcon,
       },
-    ],
+      {
+        type: AdvancedType.IMAGE_WITH_3_VERTICAL_TEXT,
+      },
+    ],     
   },
   {
     label: 'Layout',
@@ -199,9 +202,6 @@ const defaultCategories: ExtensionProps['categories'] = [
 
       <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
         <div className='ml-10'>Footer</div>
-      </BlockAvatarWrapper>,
-      <BlockAvatarWrapper type={CustomBlocksType.IMAGE_WITH_RIGHT_TEXT}>
-        <div className='ml-10'>ImageWithText</div>
       </BlockAvatarWrapper>,
     ],
   },
