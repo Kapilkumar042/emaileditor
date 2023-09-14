@@ -49,7 +49,7 @@ import {
   BlockMarketManager,
   ExtensionProps,
   MjmlToJson,
-  StandardLayout, 
+  StandardLayout,
 } from 'vikasit-email-extensions';
 import { AutoSaveAndRestoreEmail } from '@demo/components/AutoSaveAndRestoreEmail';
 
@@ -122,7 +122,12 @@ const defaultCategories: ExtensionProps['categories'] = [
       {
         type: AdvancedType.IMAGE_WITH_RIGHT_TEXT,
       },
-          ],
+
+      {
+        type: AdvancedType.VERTICAL,
+        iconUrl: ButtonIcon,
+      },
+    ],
   },
   {
     label: 'Layout',
@@ -191,12 +196,13 @@ const defaultCategories: ExtensionProps['categories'] = [
           />
         </div>
       </BlockAvatarWrapper>,
+
       <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
-        <div className="ml-10">Footer</div>
+        <div className='ml-10'>Footer</div>
       </BlockAvatarWrapper>,
       <BlockAvatarWrapper type={CustomBlocksType.IMAGE_WITH_RIGHT_TEXT}>
-      <div className="ml-10">ImageWithText</div>
-    </BlockAvatarWrapper>,
+        <div className='ml-10'>ImageWithText</div>
+      </BlockAvatarWrapper>,
     ],
   },
 ];
@@ -618,7 +624,7 @@ function replaceStandardBlockToAdvancedBlock(blockData: IBlockData) {
     [BasicType.SECTION]: AdvancedType.SECTION,
     [BasicType.GROUP]: AdvancedType.GROUP,
     [BasicType.COLUMN]: AdvancedType.COLUMN,
-    [BasicType.HEADER_WITH_LOGO]:AdvancedType.HEADER_WITH_LOGO,
+    [BasicType.HEADER_WITH_LOGO]: AdvancedType.HEADER_WITH_LOGO,
   };
 
   if (map[blockData.type]) {

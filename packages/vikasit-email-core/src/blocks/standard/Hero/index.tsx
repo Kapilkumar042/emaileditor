@@ -1,3 +1,4 @@
+//image-lga ni haai
 import React from 'react';
 import { IBlockData } from '@core/typings';
 import { BasicType } from '@core/constants';
@@ -29,7 +30,7 @@ export const Hero = createBlock<IHero>({
     return t('Hero');
   },
   type: BasicType.HERO,
-  create: (payload) => {
+  create: payload => {
     const defaultData: IHero = {
       type: BasicType.HERO,
       data: {
@@ -54,9 +55,24 @@ export const Hero = createBlock<IHero>({
           attributes: {
             padding: '10px 25px 10px 25px',
             align: 'center',
-            color: '#ffffff',
+            color: '000000',
             'font-size': '45px',
             'line-height': '45px',
+          },
+          children: [],
+        },
+        {
+          type: 'image',
+          data: {
+            value: 'src',
+          },
+          attributes: {
+            align: 'center',
+            'background-color': '#414141',
+            padding: '10px 25px 10px 25px',
+            'inner-padding': '10px 25px 10px 25px',
+            'line-height': '1.5',
+            src: 'https://img.freepik.com/free-photo/peaceful-view-sunset-light_23-2148851752.jpg',
           },
           children: [],
         },
@@ -71,7 +87,7 @@ export const Hero = createBlock<IHero>({
           attributes: {
             align: 'center',
             'background-color': '#414141',
-            color: '#ffffff',
+            color: '000000',
             'font-weight': 'normal',
             'border-radius': '3px',
             padding: '10px 25px 10px 25px',
@@ -117,6 +133,11 @@ export const Hero = createBlock<IHero>({
   },
   validParentType: [BasicType.PAGE, BasicType.WRAPPER],
   render(params) {
-    return <BasicBlock params={params} tag="mj-hero" />;
+    return (
+      <BasicBlock
+        params={params}
+        tag='mj-hero'
+      />
+    );
   },
 });

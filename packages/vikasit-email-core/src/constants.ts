@@ -1,6 +1,7 @@
 export type BlockType = BasicType;
 
 // 基础组件
+
 export enum BasicType {
   PAGE = 'page',
   SECTION = 'section',
@@ -18,19 +19,25 @@ export enum BasicType {
   ACCORDION_TITLE = 'accordion-title',
   ACCORDION_TEXT = 'accordion-text',
   HERO = 'hero',
+
   HEADER_WITH_LOGO='header-with-logo',
   IMAGE_WITH_RIGHT_TEXT='Image-With-Right-Text',
+
+
+
   CAROUSEL = 'carousel',
   NAVBAR = 'navbar',
   SOCIAL = 'social',
-  PARA='para',
+  PARA = 'para',
   // TODO
   TABLE = 'table',
 
   TEMPLATE = 'template',
+  VERTICAL = "VERTICAL"
 }
 
 // 高级组件
+
 export enum AdvancedType {
   TEXT = 'advanced_text',
   IMAGE = 'advanced_image',
@@ -47,9 +54,13 @@ export enum AdvancedType {
   COLUMN = 'advanced_column',
   GROUP = 'advanced_group',
   HERO = 'advanced_hero',
+
   HEADER_WITH_LOGO='advanced_header-with-logo',
   IMAGE_WITH_RIGHT_TEXT='Image-With-Right-Text',
-  PARA = 'advanced_para'
+  PARA = 'advanced_para',
+VERTICAL = "VERTICAL",
+
+
 }
 
 export const MERGE_TAG_CLASS_NAME = 'vikasit-email-merge-tag-container';
