@@ -11,14 +11,12 @@
 10. Footer="block-footer-single-tone-v1"
 11. Shadow="block-shadow-single-tone-v1"
 12. Text="block-full-text-single-tone-v1"
-
-# Custom section
-1. Image Text V="block-image-text-vertical-single-tone-v1"
-2. Image Text H="block-image-text-horizontal-single-tone-v1"
-3. Image Text 3X="block-image-text-3x-v1-single-tone"
-4. Image Image 2X="block-image-2x-v2-single-tone"
-5. Image Image 3X="block-image-3x-v2-single-tone"
-6. Text Text="block-text-text-horizontal-single-tone-v1"
+13. Image Text V="block-image-text-vertical-single-tone-v1"
+14. Image Text H="block-image-text-horizontal-single-tone-v1"
+15. Image Text 3X="block-image-text-3x-v1-single-tone"
+16. Image 2X="block-image-2x-v2-single-tone"
+17. Image 3X="block-image-3x-v2-single-tone"
+18. Text 2X="block-text-text-horizontal-single-tone-v1"
 
 # Layout
 1. 2Col 25%-75% ="layout-25-75-single-tone-v1"
