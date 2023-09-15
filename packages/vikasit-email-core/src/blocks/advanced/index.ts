@@ -22,7 +22,9 @@ import {
   AdvancedGroup,
   AdvancedColumn,
   AdvancedHero,
-  AdvancedHeaderWithLogo
+  AdvancedHeaderWithLogo,
+  AdvancedImage3X,
+  AdvancedImage2X,
 } from './blocks';
 import { VERTICAL } from '../standard/VerticalImage';
 
@@ -44,6 +46,8 @@ export const advancedBlocks = {
   [AdvancedType.COLUMN]: AdvancedColumn,
   [AdvancedType.HERO]: AdvancedHero,
   [AdvancedType.VERTICAL]: VERTICAL,
+  [AdvancedType.IMAGE_3X] : AdvancedImage3X,
+  [AdvancedType.IMAGE_2X] : AdvancedImage2X,
 
 };
 

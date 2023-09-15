@@ -17,6 +17,8 @@ import { ImageWithRightText, IImageWithRightText } from './ImageWithRightText';
 import { IVerticalImage, VERTICAL } from './VerticalImage';
 
 import { ImageWith3VerticalText, IImageWith3VerticalText } from './ImageWith3VerticalText';
+import { ThreeVerticalImage, IThreeVerticalImage } from './ThreeVerticalImage';
+import { TwoVerticalImage, ITwoVerticalImage } from './TwoVerticalImage';
 import { Navbar, INavbar } from './Navbar';
 import { ISocial, Social } from './Social';
 import { Raw, IRaw } from './Raw';
@@ -47,7 +49,8 @@ export const standardBlocks = {
   [BasicType.SOCIAL]: Social,
 
   [BasicType.IMAGE_WITH_RIGHT_TEXT]: ImageWithRightText,
-
+  [BasicType.IMAGE_3X] : ThreeVerticalImage,
+  [BasicType.IMAGE_2X] : TwoVerticalImage,
   [BasicType.VERTICAL]: VERTICAL,
   [BasicType.IMAGE_WITH_3_VERTICAL_TEXT]:ImageWith3VerticalText,
 
@@ -81,6 +84,8 @@ export type {
   IHero,
   IImageWithRightText,
   IImageWith3VerticalText,
+  IThreeVerticalImage,
+  ITwoVerticalImage,
   ISocial,
   INavbar,
   IRaw,

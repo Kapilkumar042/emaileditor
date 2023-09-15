@@ -28,6 +28,8 @@ import { Navbar } from './Navbar';
 import { Social } from './Social';
 import { Table } from './Table';
 import { BasicType, AdvancedType } from 'vikasit-email-core';
+import { ThreeVerticalImage } from './ThreeVerticalImage';
+import { TwoVerticalImage } from './TwoVerticalImage';
 
 export const blocks = {
   [BasicType.PAGE]: Page,
@@ -53,8 +55,8 @@ export const blocks = {
 
   [BasicType.VERTICAL]: VerticalImage,
 
-
-
+  [BasicType.IMAGE_2X] : TwoVerticalImage,
+  [BasicType.IMAGE_3X] : ThreeVerticalImage,
   [BasicType.IMAGE_WITH_3_VERTICAL_TEXT] : ImageWith3VerticalText,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
@@ -74,7 +76,8 @@ export const blocks = {
   [AdvancedType.HERO]: Hero,
 
   // [AdvancedType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText,
-
+  [AdvancedType.IMAGE_3X]: ThreeVerticalImage,
+  [AdvancedType.IMAGE_2X]: TwoVerticalImage,
   [AdvancedType.WRAPPER]: Wrapper,
   [AdvancedType.SECTION]: Section,
   [AdvancedType.GROUP]: Group,

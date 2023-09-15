@@ -25,7 +25,8 @@ export enum BasicType {
 
 
   IMAGE_WITH_3_VERTICAL_TEXT='Image-With-3-Vertical-Text',
-
+  IMAGE_3X = 'Image-3x',
+  IMAGE_2X = 'Image-2x',
   CAROUSEL = 'carousel',
   NAVBAR = 'navbar',
   SOCIAL = 'social',
@@ -60,7 +61,9 @@ export enum AdvancedType {
   IMAGE_WITH_RIGHT_TEXT='Image-With-Right-Text',
   PARA = 'advanced_para',
   VERTICAL = "VERTICAL",
-  IMAGE_WITH_3_VERTICAL_TEXT = "Image-With-3-Vertical-Text"
+  IMAGE_WITH_3_VERTICAL_TEXT = "Image-With-3-Vertical-Text",
+  IMAGE_3X = "Image-3X",
+  IMAGE_2X = "Image-2X",
 }
 
 export const MERGE_TAG_CLASS_NAME = 'vikasit-email-merge-tag-container';

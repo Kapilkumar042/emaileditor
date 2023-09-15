@@ -16,6 +16,8 @@ export { AccordionText } from './AccordionText';
 export { Carousel } from './Carousel';
 export { Hero } from './Hero';
 export { ImageWithRightText } from './ImageWithRightText'
+export {ThreeVerticalImage } from './ThreeVerticalImage'
+export {TwoVerticalImage } from './TwoVerticalImage'
 export { Navbar } from './Navbar';
 export { Social } from './Social';
 export { Table } from './Table';

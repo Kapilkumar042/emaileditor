@@ -26,7 +26,7 @@ export type IImageWith3VerticalText = IBlockData<
 
 export const ImageWith3VerticalText = createBlock<IImageWith3VerticalText>({
   get name() {
-    return t('3 image with vertical text');
+    return t('Image Text 3X');
   },
   type: BasicType.IMAGE_WITH_3_VERTICAL_TEXT,
   create: payload => {

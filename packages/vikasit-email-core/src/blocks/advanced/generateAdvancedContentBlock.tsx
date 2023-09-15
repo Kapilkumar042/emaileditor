@@ -31,7 +31,8 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
       AdvancedType.HERO,
 
       AdvancedType.IMAGE_WITH_RIGHT_TEXT,
-
+      AdvancedType.IMAGE_3X,
+      AdvancedType.IMAGE_2X,
       AdvancedType.VERTICAL,
     ],
     getContent: params => {
