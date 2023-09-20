@@ -1,4 +1,5 @@
 # Content section
+
 1. Title="block-title-single-tone-v1"
 2. Image="block-single-image-v1-single-tone"
 3. Button="block-button-v1-single-tone"
@@ -19,6 +20,7 @@
 18. Text 2X="block-text-text-horizontal-single-tone-v1"
 
 # Layout
+
 1. 2Col 25%-75% ="layout-25-75-single-tone-v1"
 2. 2Col 75%-25% ="layout-75-25-single-tone-v1"
 3. 2Col 50%-50% ="layout-50-50-single-tone-v1"

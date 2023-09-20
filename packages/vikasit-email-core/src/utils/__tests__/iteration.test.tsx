@@ -9,25 +9,25 @@ const Page = BlockManager.getBlockByType(BasicType.PAGE)!;
 const Section = BlockManager.getBlockByType<AdvancedBlock>(AdvancedType.SECTION)!;
 const Column = BlockManager.getBlockByType(AdvancedType.COLUMN)!;
 const Text = BlockManager.getBlockByType(AdvancedType.TEXT)!;
+// const Title = BlockManager.getBlockByType(AdvancedType.TITLE)!;
 
 const engine = new Liquid();
 describe('Test iteration.test', () => {
-
   const mergeTags = {
     list: [
       {
         id: 1,
-        title: '1'
+        title: '1',
       },
       {
         id: 2,
-        title: '2'
+        title: '2',
       },
       {
         id: 3,
-        title: '3'
+        title: '3',
       },
-    ]
+    ],
   };
 
   const iterationOption = {
@@ -35,10 +35,8 @@ describe('Test iteration.test', () => {
     itemName: 'item',
     dataSource: 'list',
     limit: 999,
-    mockQuantity: 1
+    mockQuantity: 1,
   };
-
-
 
   it('should not iteration when enabled is false ', () => {
     const content = Page.create({
@@ -46,8 +44,8 @@ describe('Test iteration.test', () => {
         Section.create({
           data: {
             value: {
-              iteration: { ...iterationOption, enabled: false }
-            }
+              iteration: { ...iterationOption, enabled: false },
+            },
           },
           children: [
             Column.create({
@@ -55,24 +53,25 @@ describe('Test iteration.test', () => {
                 Text.create({
                   data: {
                     value: {
-                      content: 'id: {{item.id}} title: {{item.title}}'
-                    }
-                  }
-                })
-              ]
-            })
-
-          ]
-        })
-      ]
+                      content: 'id: {{item.id}} title: {{item.title}}',
+                    },
+                  },
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
     });
 
-    const tpl = engine.parse(JsonToMjml({
-      data: content,
-      mode: 'production',
-      context: content,
-      dataSource: {},
-    }));
+    const tpl = engine.parse(
+      JsonToMjml({
+        data: content,
+        mode: 'production',
+        context: content,
+        dataSource: {},
+      }),
+    );
     const html = engine.renderSync(tpl, mergeTags);
     expect(html).toContain('id:  title:');
   });
@@ -83,8 +82,8 @@ describe('Test iteration.test', () => {
         Section.create({
           data: {
             value: {
-              iteration: iterationOption
-            }
+              iteration: iterationOption,
+            },
           },
           children: [
             Column.create({
@@ -92,26 +91,28 @@ describe('Test iteration.test', () => {
                 Text.create({
                   data: {
                     value: {
-                      content: 'this will be hide due to empty list'
-                    }
-                  }
-                })
-              ]
-            })
-          ]
-        })
-      ]
+                      content: 'this will be hide due to empty list',
+                    },
+                  },
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
     });
 
-    const tpl = engine.parse(JsonToMjml({
-      data: content,
-      mode: 'production',
-      context: content,
-      dataSource: {},
-    }));
+    const tpl = engine.parse(
+      JsonToMjml({
+        data: content,
+        mode: 'production',
+        context: content,
+        dataSource: {},
+      }),
+    );
     const html = engine.renderSync(tpl, {
       ...mergeTags,
-      list: []
+      list: [],
     });
     expect(html).not.toContain('this will be hide due to empty list');
   });
@@ -122,8 +123,8 @@ describe('Test iteration.test', () => {
         Section.create({
           data: {
             value: {
-              iteration: iterationOption
-            }
+              iteration: iterationOption,
+            },
           },
 
           children: [
@@ -132,23 +133,25 @@ describe('Test iteration.test', () => {
                 Text.create({
                   data: {
                     value: {
-                      content: 'id: {{item.id}} title: {{item.title}}'
-                    }
-                  }
-                })
-              ]
-            })
-          ]
-        })
-      ]
+                      content: 'id: {{item.id}} title: {{item.title}}',
+                    },
+                  },
+                }),
+              ],
+            }),
+          ],
+        }),
+      ],
     });
 
-    const tpl = engine.parse(JsonToMjml({
-      data: content,
-      mode: 'production',
-      context: content,
-      dataSource: {},
-    }));
+    const tpl = engine.parse(
+      JsonToMjml({
+        data: content,
+        mode: 'production',
+        context: content,
+        dataSource: {},
+      }),
+    );
     const html = engine.renderSync(tpl, mergeTags);
     expect(html).toContain('id: 1 title: 1');
     expect(html).toContain('id: 2 title: 2');

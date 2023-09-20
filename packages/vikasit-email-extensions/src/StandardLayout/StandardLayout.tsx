@@ -24,6 +24,9 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.TEXT,
       },
       {
+        type: AdvancedType.TITLE,
+      },
+      {
         type: AdvancedType.IMAGE,
         payload: { attributes: { padding: '0px 0px 0px 0px' } },
       },
@@ -43,17 +46,23 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.HERO,
       },
       {
+        type: AdvancedType.TWOTEXTNEW,
+      },
+      {
         type: AdvancedType.WRAPPER,
       },
       {
         type: AdvancedType.PARA,
       },
       {
-        type:AdvancedType.HEADER_WITH_LOGO,
+        type: AdvancedType.HEADER_WITH_LOGO,
       },
       {
-        type:AdvancedType.IMAGE_WITH_RIGHT_TEXT,
-      }
+        type: AdvancedType.TWOTEXTNEW,
+      },
+      {
+        type: AdvancedType.IMAGE_WITH_RIGHT_TEXT,
+      },
     ],
   },
   {

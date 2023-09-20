@@ -20,6 +20,8 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
       BasicType.COLUMN,
       BasicType.GROUP,
       BasicType.HERO,
+      BasicType.TITLE,
+      BasicType.TWOTEXTNEW,
 
       BasicType.IMAGE_WITH_RIGHT_TEXT,
 
@@ -34,6 +36,8 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
       AdvancedType.IMAGE_3X,
       AdvancedType.IMAGE_2X,
       AdvancedType.VERTICAL,
+      AdvancedType.TITLE,
+      AdvancedType.TWOTEXTNEW,
     ],
     getContent: params => {
       const { data, idx, mode, context, index } = params;
