@@ -70,10 +70,19 @@ import localesData from 'vikasit-email-localization/locales/locales.json';
 import { Uploader } from '@demo/utils/Uploader';
 import axios from 'axios';
 import enUS from '@arco-design/web-react/es/locale/en-US';
-import TextIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
+import TextIcon from '../../Icons/svg/block-full-text-single-tone-v1.svg';
 import ButtonIcon from '../../Icons/svg/block-button-v1-single-tone.svg';
 import SocialIcon from '../../Icons/svg/block-social-single-tone-v1.svg';
-import ImageIcon from '../../Icons/svg/block-image-text-vertical-single-tone-v1.svg';
+import ImageIcon from '../../Icons/svg/block-single-image-v1-single-tone.svg';
+import VerticalIcon from '../../Icons/svg/block-image-text-vertical-single-tone-v1.svg';
+import RightTextImageIcon from '../../Icons/svg/block-image-text-horizontal-single-tone-v1.svg';
+import WrapperIcon from '../../Icons/svg/block-wrapper-single-tone-v1.svg';
+import DividerIcon from '../../Icons/svg/block-divider-single-tone-v1.svg';
+import HeroIcon from '../../Icons/svg/block-hero-single-tone-v1.svg';
+import SpacerIcon from '../../Icons/svg/block-horizontal-spacing-single-tone-v1.svg';
+import HeaderIcon from '../../Icons/svg/block-header-single-tone-v1.svg';
+import TitleIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
+import TwoTextIcon from '../../Icons/svg/block-text-text-horizontal-single-tone-v1.svg';
 
 console.log(localesData);
 
@@ -102,30 +111,40 @@ const defaultCategories: ExtensionProps['categories'] = [
       },
       {
         type: AdvancedType.DIVIDER,
-        iconUrl: ButtonIcon,
+        iconUrl: DividerIcon,
       },
       {
         type: AdvancedType.SPACER,
-        iconUrl: ButtonIcon,
+        iconUrl: SpacerIcon,
       },
       {
         type: AdvancedType.HERO,
-        iconUrl: ButtonIcon,
+        iconUrl: HeroIcon,
       },
       {
         type: AdvancedType.WRAPPER,
-        iconUrl: TextIcon,
+        iconUrl: WrapperIcon,
       },
       {
         type: AdvancedType.HEADER_WITH_LOGO,
+        iconUrl: HeaderIcon,
       },
       {
         type: AdvancedType.IMAGE_WITH_RIGHT_TEXT,
+        iconUrl: RightTextImageIcon,
       },
 
       {
         type: AdvancedType.VERTICAL,
-        iconUrl: ButtonIcon,
+        iconUrl: VerticalIcon,
+      },
+      {
+        type: AdvancedType.TITLE,
+        iconUrl: TitleIcon,
+      },
+      {
+        type: AdvancedType.TWOTEXTNEW,
+        iconUrl: TwoTextIcon,
       },
     ],
   },
@@ -612,6 +631,8 @@ export default function Editor() {
 function replaceStandardBlockToAdvancedBlock(blockData: IBlockData) {
   const map = {
     [BasicType.TEXT]: AdvancedType.TEXT,
+    [BasicType.TITLE]: AdvancedType.TITLE,
+
     [BasicType.BUTTON]: AdvancedType.BUTTON,
     [BasicType.IMAGE]: AdvancedType.IMAGE,
     [BasicType.DIVIDER]: AdvancedType.DIVIDER,
