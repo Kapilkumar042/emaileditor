@@ -9,6 +9,8 @@ import { HeaderWithLogo }  from './HeaderWithLogo';
 import { Divider } from './Divider';
 import { Wrapper } from './Wrapper';
 import { Spacer } from './Spacer';
+import { Title } from './Title';
+
 
 import { Raw } from './Raw';
 import { Accordion } from './Accordion';
@@ -27,12 +29,14 @@ import { Navbar } from './Navbar';
 import { Social } from './Social';
 import { Table } from './Table';
 import { BasicType, AdvancedType } from 'vikasit-email-core';
+import { TwoTextNew } from './TwoTextNew';
 
 export const blocks = {
   [BasicType.PAGE]: Page,
   [BasicType.SECTION]: Section,
   [BasicType.COLUMN]: Column,
   [BasicType.TEXT]: Text,
+  [BasicType.TITLE]: Title,
   [BasicType.IMAGE]: Image,
   [BasicType.GROUP]: Group,
   [BasicType.BUTTON]: Button,
@@ -47,18 +51,17 @@ export const blocks = {
   [BasicType.ACCORDION_TEXT]: AccordionText,
   [BasicType.CAROUSEL]: Carousel,
   [BasicType.HERO]: Hero,
+  [BasicType.TWOTEXTNEW]: TwoTextNew,
 
   [BasicType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText ,
-
   [BasicType.VERTICAL]: VerticalImage,
-
-
-
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
   [BasicType.TABLE]: Table,
 
   [AdvancedType.TEXT]: Text,
+  // [AdvancedType.TITLE]: Title,
+
   [AdvancedType.IMAGE]: Image,
   [AdvancedType.BUTTON]: Button,
   [AdvancedType.HEADER_WITH_LOGO]:HeaderWithLogo,
@@ -68,9 +71,15 @@ export const blocks = {
   [AdvancedType.CAROUSEL]: Carousel,
   [AdvancedType.NAVBAR]: Navbar,
   [AdvancedType.SOCIAL]: Social,
+[AdvancedType.HERO]: Hero,
+// [AdvancedType.TWOTEXTNEW]: TwoTextNew,
 
-  [AdvancedType.HERO]: Hero,
+// [AdvancedType.TWOTEXT]: TwoText,
 
+
+
+
+  // [AdvancedType.TITLE]: Title,
   // [AdvancedType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText,
 
   [AdvancedType.WRAPPER]: Wrapper,

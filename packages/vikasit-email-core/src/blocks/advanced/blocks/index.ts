@@ -14,6 +14,8 @@ import {
   IColumn,
   IHero,
   IHeader,
+  ITitle,
+  ITwoTextNew,
 
   IImageWithRightText,
 
@@ -27,6 +29,10 @@ import { generateAdvancedLayoutBlock } from '../generateAdvancedLayoutBlock';
 export const AdvancedText = generateAdvancedContentBlock<IText>({
   type: AdvancedType.TEXT,
   baseType: BasicType.TEXT,
+});
+export const Title = generateAdvancedContentBlock<ITitle>({
+  type: AdvancedType.TITLE,
+  baseType: BasicType.TITLE,
 });
 
 export const AdvancedButton = generateAdvancedContentBlock<IButton>({
@@ -129,6 +135,16 @@ export const Vertical_TextImage = generateAdvancedLayoutBlock<IVerticalImage>({
 export const AdvancedImageWithRightText = generateAdvancedLayoutBlock<IImageWithRightText>({
   type: AdvancedType.IMAGE_WITH_RIGHT_TEXT,
   baseType: BasicType.IMAGE_WITH_RIGHT_TEXT,
+  validParentType: [
+    BasicType.WRAPPER,
+    AdvancedType.WRAPPER,
+    BasicType.PAGE,
+  ],
+});
+
+export const TwoTextNew = generateAdvancedLayoutBlock<ITwoTextNew>({
+  type: AdvancedType.TWOTEXTNEW,
+  baseType: BasicType.TWOTEXTNEW,
   validParentType: [
     BasicType.WRAPPER,
     AdvancedType.WRAPPER,

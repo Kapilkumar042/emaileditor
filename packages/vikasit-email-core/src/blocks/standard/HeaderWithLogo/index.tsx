@@ -38,7 +38,7 @@ export type IHeader = IBlockData<
 
 export const HeaderWithLogo = createBlock<IHeader>({
   get name() {
-    return t('HeaderWithLogo');
+    return t('Header');
   },
   type: BasicType.HEADER_WITH_LOGO,
   create: payload => {
@@ -46,8 +46,13 @@ export const HeaderWithLogo = createBlock<IHeader>({
       type: BasicType.HEADER_WITH_LOGO,
       data: {
         value: {
-          content: <img src="https://fastly.picsum.photos/id/958/536/354.jpg?hmac=vf3vAyAxK_2HGg_mRorQgRDMFHlHQ-9Bx9F90geeqhk" height="50px" width="100px" />,
-
+          content: (
+            <img
+              src='https://fastly.picsum.photos/id/958/536/354.jpg?hmac=vf3vAyAxK_2HGg_mRorQgRDMFHlHQ-9Bx9F90geeqhk'
+              height='50px'
+              width='100px'
+            />
+          ),
         },
       },
       attributes: {

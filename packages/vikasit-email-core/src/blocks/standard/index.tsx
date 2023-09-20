@@ -2,6 +2,8 @@ import { IPage, Page } from './Page';
 import { ISection, Section } from './Section';
 import { Column, IColumn } from './Column';
 import { IText, Text } from './Text';
+import { ITitle, Title } from './Title';
+
 import { IImage, Image } from './Image';
 import { Group, IGroup } from './Group';
 import { Button, IButton } from './Button';
@@ -11,6 +13,7 @@ import { IWrapper, Wrapper } from './Wrapper';
 import { ISpacer, Spacer } from './Spacer';
 import { Carousel, ICarousel } from './Carousel';
 import { Hero, IHero } from './Hero';
+import { ITwoTextNew, TwoTextNew } from './TwoTextNew';
 
 import { ImageWithRightText, IImageWithRightText } from './ImageWithRightText';
 
@@ -32,6 +35,9 @@ export const standardBlocks = {
   [BasicType.SECTION]: Section,
   [BasicType.COLUMN]: Column,
   [BasicType.TEXT]: Text,
+  [BasicType.TITLE]: Title,
+  [BasicType.TWOTEXTNEW]: TwoTextNew,
+
   [BasicType.IMAGE]: Image,
   [BasicType.GROUP]: Group,
   [BasicType.BUTTON]: Button,
@@ -87,4 +93,6 @@ export type {
   IAccordionText,
   ITemplate,
   IVerticalImage,
+  ITitle,
+  ITwoTextNew,
 };

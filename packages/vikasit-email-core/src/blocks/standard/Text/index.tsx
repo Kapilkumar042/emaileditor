@@ -38,7 +38,9 @@ export const Text = createBlock<IText>({
       type: BasicType.TEXT,
       data: {
         value: {
-          content: t('Make it simple for everyone to compose emails!'),
+          content: t(
+            'Make it simple for everyone to compose emails simple for everyone to compose emails simple for everyone to compose emails simple for everyone to compose emails simple for everyone to compose emails',
+          ),
         },
       },
       attributes: {

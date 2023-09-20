@@ -27,7 +27,7 @@ export type IVerticalImage = IBlockData<
 
 export const VERTICAL = createBlock<IVerticalImage>({
   get name() {
-    return t('VERTICAL');
+    return t('Image Text V');
   },
   type: BasicType.VERTICAL,
   create: payload => {

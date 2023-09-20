@@ -22,9 +22,14 @@ import {
   AdvancedGroup,
   AdvancedColumn,
   AdvancedHero,
-  AdvancedHeaderWithLogo
+  AdvancedHeaderWithLogo,
+
 } from './blocks';
 import { VERTICAL } from '../standard/VerticalImage';
+import { Title } from '../standard/Title';
+import { TwoTextNew } from '../standard/TwoTextNew';
+
+
 
 export const advancedBlocks = {
   [AdvancedType.TEXT]: AdvancedText,
@@ -38,12 +43,17 @@ export const advancedBlocks = {
   [AdvancedType.CAROUSEL]: AdvancedCarousel,
   [AdvancedType.SOCIAL]: AdvancedSocial,
 
+
+
   [AdvancedType.WRAPPER]: AdvancedWrapper,
   [AdvancedType.SECTION]: AdvancedSection,
   [AdvancedType.GROUP]: AdvancedGroup,
   [AdvancedType.COLUMN]: AdvancedColumn,
   [AdvancedType.HERO]: AdvancedHero,
   [AdvancedType.VERTICAL]: VERTICAL,
+  [AdvancedType.TITLE]:Title,
+  [AdvancedType.TWOTEXT]:TwoTextNew,
+
 
 };
 

@@ -18,7 +18,13 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { MjmlToJson } from '@extensions/utils/MjmlToJson';
 import styles from './index.module.scss';
 
-export function SourceCodePanel({ jsonReadOnly, mjmlReadOnly }: { jsonReadOnly: boolean; mjmlReadOnly: boolean }) {
+export function SourceCodePanel({
+  jsonReadOnly,
+  mjmlReadOnly,
+}: {
+  jsonReadOnly: boolean;
+  mjmlReadOnly: boolean;
+}) {
   const { setValueByIdx, focusBlock, values } = useBlock();
   const { focusIdx } = useFocusIdx();
 
