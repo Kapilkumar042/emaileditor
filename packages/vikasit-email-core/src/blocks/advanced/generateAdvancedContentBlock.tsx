@@ -22,7 +22,7 @@ export function generateAdvancedContentBlock<T extends IBlockData>(option: {
       BasicType.HERO,
       BasicType.TITLE,
       BasicType.TWOTEXTNEW,
-
+      BasicType.SHADOW,
       BasicType.IMAGE_WITH_RIGHT_TEXT,
 
       BasicType.VERTICAL,

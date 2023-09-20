@@ -22,7 +22,8 @@ import {
   IVerticalImage,
   IThreeVerticalImage,
   ITwoVerticalImage,
-  IImageWith3VerticalText
+  IImageWith3VerticalText,
+  IShadow
 } from '../../standard';
 import { AdvancedType, BasicType } from '@core/constants';
 import { generateAdvancedContentBlock } from '../generateAdvancedContentBlock';

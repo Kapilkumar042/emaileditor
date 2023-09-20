@@ -57,8 +57,6 @@ export const advancedBlocks = {
   [AdvancedType.IMAGE_2X] : AdvancedImage2X,
   [AdvancedType.TITLE]:Title,
   [AdvancedType.TWOTEXTNEW]:TwoTextNew,
-
-
 };
 
 export { Operator, OperatorSymbol };

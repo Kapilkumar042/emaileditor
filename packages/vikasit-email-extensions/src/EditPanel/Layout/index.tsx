@@ -56,6 +56,7 @@ export function Layouts() {
                         key={item.title}
                         title={item.title || ''}
                         columns={item.payload}
+                        iconUrl={item.iconUrl}
                       />
                     </>
                   );
@@ -69,7 +70,7 @@ export function Layouts() {
   );
 }
 
-function LayoutItem({ columns, title }: { columns: string[][]; title: string }) {
+function LayoutItem({ columns, title, iconUrl }: { columns: string[][]; title: string; iconUrl?:string }) {
   // const [visible, setVisible] = useState(false);
 
   return (
@@ -100,6 +101,13 @@ function LayoutItem({ columns, title }: { columns: string[][]; title: string }) 
               type={AdvancedType.SECTION}
               payload={payload}
             >
+              <IconFont
+            style={{ fontSize: 20 }}
+            iconUrl={iconUrl}
+          />
+          {/* <Typography.Text style={{ marginTop: 10 }}>
+            {title || "kkkk"}
+          </Typography.Text> */}
               <div>
                 <div className={layoutstyles.blockItemContainer}>
                   {item.map((column, index) => {

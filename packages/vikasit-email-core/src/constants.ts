@@ -33,7 +33,7 @@ export enum BasicType {
   PARA = 'para',
   // TODO
   TABLE = 'table',
-
+  SHADOW = 'Shadow',
   TEMPLATE = 'template',
   VERTICAL = "Vertical ",
   TITLE = "Title",
@@ -68,7 +68,9 @@ export enum AdvancedType {
   IMAGE_WITH_3_VERTICAL_TEXT = "Image-With-3-Vertical-Text",
   IMAGE_3X = "Image-3X",
   IMAGE_2X = "Image-2X",
+
   TWOTEXTNEW = "TWOTEXTNEW",
+  SHADOW = 'Shadow',
 }
 
 export const MERGE_TAG_CLASS_NAME = 'vikasit-email-merge-tag-container';

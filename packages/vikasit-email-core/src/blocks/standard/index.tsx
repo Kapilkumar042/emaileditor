@@ -15,6 +15,7 @@ import { Carousel, ICarousel } from './Carousel';
 import { Hero, IHero } from './Hero';
 import { ITwoTextNew, TwoTextNew } from './TwoTextNew';
 
+import { Shadow, IShadow } from './Shadow';
 import { ImageWithRightText, IImageWithRightText } from './ImageWithRightText';
 
 import { IVerticalImage, VERTICAL } from './VerticalImage';
@@ -59,7 +60,7 @@ export const standardBlocks = {
   [BasicType.IMAGE_2X] : TwoVerticalImage,
   [BasicType.VERTICAL]: VERTICAL,
   [BasicType.IMAGE_WITH_3_VERTICAL_TEXT]:ImageWith3VerticalText,
-
+  [BasicType.SHADOW] : Shadow,
   // spacial block, render string
   [BasicType.TEMPLATE]: Template,
 
@@ -103,4 +104,5 @@ export type {
   IVerticalImage,
   ITitle,
   ITwoTextNew,
+  IShadow,
 };

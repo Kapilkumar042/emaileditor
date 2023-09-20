@@ -34,6 +34,7 @@ import { ThreeVerticalImage } from './ThreeVerticalImage';
 import { TwoVerticalImage } from './TwoVerticalImage';
 import { TwoTextNew } from './TwoTextNew';
 
+import { Shadow } from './Shadow';
 export const blocks = {
   [BasicType.PAGE]: Page,
   [BasicType.SECTION]: Section,
@@ -58,7 +59,7 @@ export const blocks = {
 
   [BasicType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText ,
   [BasicType.VERTICAL]: VerticalImage,
-
+  [BasicType.SHADOW]:Shadow,
   [BasicType.IMAGE_2X] : TwoVerticalImage,
   [BasicType.IMAGE_3X] : ThreeVerticalImage,
   [BasicType.IMAGE_WITH_3_VERTICAL_TEXT] : ImageWith3VerticalText,
@@ -88,6 +89,7 @@ export const blocks = {
 
   // [AdvancedType.TITLE]: Title,
   // [AdvancedType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText,
+  // [AdvancedType.SHADOW]:Shadow,
   [AdvancedType.IMAGE_3X]: ThreeVerticalImage,
   [AdvancedType.IMAGE_2X]: TwoVerticalImage,
   [AdvancedType.WRAPPER]: Wrapper,

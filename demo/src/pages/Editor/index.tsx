@@ -88,6 +88,7 @@ import HeaderIcon from '../../Icons/svg/block-header-single-tone-v1.svg';
 import TitleIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
 import TwoTextIcon from '../../Icons/svg/block-text-text-horizontal-single-tone-v1.svg';
 
+import ShadowIcon from '../../Icons/svg/block-shadow-single-tone-v1.svg';
 console.log(localesData);
 
 const defaultCategories: ExtensionProps['categories'] = [
@@ -162,6 +163,10 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.IMAGE_2X,
         iconUrl:Image2xIcon
       },
+      {
+        type: AdvancedType.SHADOW,
+        iconUrl:ShadowIcon
+      },
     ],     
   },
   {
@@ -182,6 +187,7 @@ const defaultCategories: ExtensionProps['categories'] = [
           ['50%', '25%', '25%'],
           ['25%', '25%', '25%', '25%'],
         ],
+        // iconUrl:Image2xIcon
       },
       // {
       //   title: '3 columns',
