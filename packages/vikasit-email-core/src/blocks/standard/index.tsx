@@ -17,7 +17,7 @@ import { ITwoTextNew, TwoTextNew } from './TwoTextNew';
 
 import { Shadow, IShadow } from './Shadow';
 import { ImageWithRightText, IImageWithRightText } from './ImageWithRightText';
-
+import { Footer, IFooter } from './Footer';
 import { IVerticalImage, VERTICAL } from './VerticalImage';
 
 import { ImageWith3VerticalText, IImageWith3VerticalText } from './ImageWith3VerticalText';
@@ -54,7 +54,7 @@ export const standardBlocks = {
   [BasicType.HERO]: Hero,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
-
+  [BasicType.FOOTER]: Footer,
   [BasicType.IMAGE_WITH_RIGHT_TEXT]: ImageWithRightText,
   [BasicType.IMAGE_3X] : ThreeVerticalImage,
   [BasicType.IMAGE_2X] : TwoVerticalImage,
@@ -105,4 +105,5 @@ export type {
   ITitle,
   ITwoTextNew,
   IShadow,
+  IFooter,
 };

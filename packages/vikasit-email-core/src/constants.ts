@@ -38,6 +38,7 @@ export enum BasicType {
   VERTICAL = "Vertical ",
   TITLE = "Title",
   TWOTEXTNEW = "TwoTextNew",
+  FOOTER = "Footer",
 }
 
 // 高级组件
@@ -71,6 +72,7 @@ export enum AdvancedType {
 
   TWOTEXTNEW = "TWOTEXTNEW",
   SHADOW = 'Shadow',
+  FOOTER = "Footer",
 }
 
 export const MERGE_TAG_CLASS_NAME = 'vikasit-email-merge-tag-container';
