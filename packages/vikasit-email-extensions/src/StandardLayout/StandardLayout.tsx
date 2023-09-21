@@ -46,7 +46,7 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.HERO,
       },
       {
-        type: AdvancedType.TWOTEXT,
+        type: AdvancedType.TWOTEXTNEW,
       },
       {
         type: AdvancedType.WRAPPER,

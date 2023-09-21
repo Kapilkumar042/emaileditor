@@ -73,7 +73,11 @@ import enUS from '@arco-design/web-react/es/locale/en-US';
 import TextIcon from '../../Icons/svg/block-full-text-single-tone-v1.svg';
 import ButtonIcon from '../../Icons/svg/block-button-v1-single-tone.svg';
 import SocialIcon from '../../Icons/svg/block-social-single-tone-v1.svg';
-import ImageIcon from '../../Icons/svg/block-single-image-v1-single-tone.svg';
+import ImageIcon from '../../Icons/svg/block-image-text-vertical-single-tone-v1.svg';
+import Image3xIcon from '../../Icons/svg/block-image-3x-v2-single-tone.svg';
+import Image2xIcon from '../../Icons/svg/block-image-2x-v2-single-tone.svg';
+import ImageText3XIcon from '../../Icons/svg/block-image-text-3x-v1-single-tone.svg';
+// import ImageIcon from '../../Icons/svg/block-single-image-v1-single-tone.svg';
 import VerticalIcon from '../../Icons/svg/block-image-text-vertical-single-tone-v1.svg';
 import RightTextImageIcon from '../../Icons/svg/block-image-text-horizontal-single-tone-v1.svg';
 import WrapperIcon from '../../Icons/svg/block-wrapper-single-tone-v1.svg';
@@ -84,6 +88,7 @@ import HeaderIcon from '../../Icons/svg/block-header-single-tone-v1.svg';
 import TitleIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
 import TwoTextIcon from '../../Icons/svg/block-text-text-horizontal-single-tone-v1.svg';
 
+import ShadowIcon from '../../Icons/svg/block-shadow-single-tone-v1.svg';
 console.log(localesData);
 
 const defaultCategories: ExtensionProps['categories'] = [
@@ -146,7 +151,23 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.TWOTEXTNEW,
         iconUrl: TwoTextIcon,
       },
-    ],
+      {
+        type: AdvancedType.IMAGE_WITH_3_VERTICAL_TEXT,
+        iconUrl:ImageText3XIcon,
+      },
+      {
+        type: AdvancedType.IMAGE_3X,
+        iconUrl : Image3xIcon,
+      },
+      {
+        type: AdvancedType.IMAGE_2X,
+        iconUrl:Image2xIcon
+      },
+      {
+        type: AdvancedType.SHADOW,
+        iconUrl:ShadowIcon
+      },
+    ],     
   },
   {
     label: 'Layout',
@@ -166,6 +187,7 @@ const defaultCategories: ExtensionProps['categories'] = [
           ['50%', '25%', '25%'],
           ['25%', '25%', '25%', '25%'],
         ],
+        // iconUrl:Image2xIcon
       },
       // {
       //   title: '3 columns',
@@ -218,9 +240,6 @@ const defaultCategories: ExtensionProps['categories'] = [
 
       <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
         <div className='ml-10'>Footer</div>
-      </BlockAvatarWrapper>,
-      <BlockAvatarWrapper type={CustomBlocksType.IMAGE_WITH_RIGHT_TEXT}>
-        <div className='ml-10'>ImageWithText</div>
       </BlockAvatarWrapper>,
     ],
   },

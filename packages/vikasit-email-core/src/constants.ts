@@ -24,18 +24,19 @@ export enum BasicType {
   IMAGE_WITH_RIGHT_TEXT = 'horizontal',
 
 
-
+  IMAGE_WITH_3_VERTICAL_TEXT='Image-With-3-Vertical-Text',
+  IMAGE_3X = 'Image-3x',
+  IMAGE_2X = 'Image-2x',
   CAROUSEL = 'carousel',
   NAVBAR = 'navbar',
   SOCIAL = 'social',
   PARA = 'para',
   // TODO
   TABLE = 'table',
-
+  SHADOW = 'Shadow',
   TEMPLATE = 'template',
   VERTICAL = "Vertical ",
   TITLE = "Title",
-  TWOTEXT = "TwoText",
   TWOTEXTNEW = "TwoTextNew",
 }
 
@@ -62,10 +63,14 @@ export enum AdvancedType {
   HEADER_WITH_LOGO = 'advanced_header-with-logo',
   IMAGE_WITH_RIGHT_TEXT = 'horizontal',
   PARA = 'advanced_para',
-  VERTICAL = "Vertical ",
-  TWOTEXT = "TwoText",
-  TWOTEXTNEW = "TwoTextNew",
 
+  VERTICAL = "VERTICAL",
+  IMAGE_WITH_3_VERTICAL_TEXT = "Image-With-3-Vertical-Text",
+  IMAGE_3X = "Image-3X",
+  IMAGE_2X = "Image-2X",
+
+  TWOTEXTNEW = "TWOTEXTNEW",
+  SHADOW = 'Shadow',
 }
 
 export const MERGE_TAG_CLASS_NAME = 'vikasit-email-merge-tag-container';

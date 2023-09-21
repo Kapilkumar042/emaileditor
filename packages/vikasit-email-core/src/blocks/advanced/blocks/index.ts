@@ -20,7 +20,10 @@ import {
   IImageWithRightText,
 
   IVerticalImage,
-
+  IThreeVerticalImage,
+  ITwoVerticalImage,
+  IImageWith3VerticalText,
+  IShadow
 } from '../../standard';
 import { AdvancedType, BasicType } from '@core/constants';
 import { generateAdvancedContentBlock } from '../generateAdvancedContentBlock';
@@ -142,6 +145,15 @@ export const AdvancedImageWithRightText = generateAdvancedLayoutBlock<IImageWith
   ],
 });
 
+export const AdvancedImage3X = generateAdvancedLayoutBlock<IThreeVerticalImage>({
+  type: AdvancedType.IMAGE_3X,
+  baseType: BasicType.IMAGE_3X,
+  validParentType: [
+    BasicType.WRAPPER,
+    AdvancedType.WRAPPER,
+    BasicType.PAGE,
+  ],
+});
 export const TwoTextNew = generateAdvancedLayoutBlock<ITwoTextNew>({
   type: AdvancedType.TWOTEXTNEW,
   baseType: BasicType.TWOTEXTNEW,
@@ -151,3 +163,14 @@ export const TwoTextNew = generateAdvancedLayoutBlock<ITwoTextNew>({
     BasicType.PAGE,
   ],
 });
+
+export const AdvancedImage2X = generateAdvancedLayoutBlock<ITwoVerticalImage>({
+  type: AdvancedType.IMAGE_2X,
+  baseType: BasicType.IMAGE_2X,
+  validParentType: [
+    BasicType.WRAPPER,
+    AdvancedType.WRAPPER,
+    BasicType.PAGE,
+  ],
+});
+

@@ -18,6 +18,8 @@ export { Hero } from './Hero';
 
 
 export { ImageWithRightText } from './ImageWithRightText'
+export {ThreeVerticalImage } from './ThreeVerticalImage'
+export {TwoVerticalImage } from './TwoVerticalImage'
 export {TwoTextNew} from './TwoTextNew';
 
 

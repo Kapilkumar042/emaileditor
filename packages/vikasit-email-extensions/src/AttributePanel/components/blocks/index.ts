@@ -25,12 +25,16 @@ import { ImageWithRightText } from './ImageWithRighttext';
 import { VerticalImage } from './VerticalImage';
 
 
+import { ImageWith3VerticalText } from './ImageWith3VerticalText';
 import { Navbar } from './Navbar';
 import { Social } from './Social';
 import { Table } from './Table';
 import { BasicType, AdvancedType } from 'vikasit-email-core';
+import { ThreeVerticalImage } from './ThreeVerticalImage';
+import { TwoVerticalImage } from './TwoVerticalImage';
 import { TwoTextNew } from './TwoTextNew';
 
+import { Shadow } from './Shadow';
 export const blocks = {
   [BasicType.PAGE]: Page,
   [BasicType.SECTION]: Section,
@@ -55,6 +59,10 @@ export const blocks = {
 
   [BasicType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText ,
   [BasicType.VERTICAL]: VerticalImage,
+  [BasicType.SHADOW]:Shadow,
+  [BasicType.IMAGE_2X] : TwoVerticalImage,
+  [BasicType.IMAGE_3X] : ThreeVerticalImage,
+  [BasicType.IMAGE_WITH_3_VERTICAL_TEXT] : ImageWith3VerticalText,
   [BasicType.NAVBAR]: Navbar,
   [BasicType.SOCIAL]: Social,
   [BasicType.TABLE]: Table,
@@ -81,7 +89,9 @@ export const blocks = {
 
   // [AdvancedType.TITLE]: Title,
   // [AdvancedType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText,
-
+  // [AdvancedType.SHADOW]:Shadow,
+  [AdvancedType.IMAGE_3X]: ThreeVerticalImage,
+  [AdvancedType.IMAGE_2X]: TwoVerticalImage,
   [AdvancedType.WRAPPER]: Wrapper,
   [AdvancedType.SECTION]: Section,
   [AdvancedType.GROUP]: Group,
