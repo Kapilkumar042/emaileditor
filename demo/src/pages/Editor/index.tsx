@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-wrap-multilines */
+//editors
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import template from '@demo/store/template';
@@ -89,6 +90,19 @@ import TitleIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
 import TwoTextIcon from '../../Icons/svg/block-text-text-horizontal-single-tone-v1.svg';
 
 import ShadowIcon from '../../Icons/svg/block-shadow-single-tone-v1.svg';
+
+import col25_75 from '../../Icons/svg/layout-25-75-single-tone-v1.svg';
+import col75_25 from '../../Icons/svg/layout-75-25-single-tone-v1.svg';
+import col50_50 from '../../Icons/svg/layout-50-50-single-tone-v1.svg';
+import col33_67 from '../../Icons/svg/layout-33-67-single-tone-v1.svg';
+import col67_33 from '../../Icons/svg/layout-67-33-single-tone-v1.svg';
+import col25_25_50 from '../../Icons/svg/layout-25-25-50-single-tone-v1.svg';
+import col50_25_25 from '../../Icons/svg/layout-50-25-25-single-tone-v1.svg';
+import col33_33_33 from '../../Icons/svg/layout-33-33-33-single-tone-v1.svg';
+import col25_25_25_25 from '../../Icons/svg/layout-25-25-25-25-single-tone-v1.svg';
+
+//  import layoutIcon from '../../Icons/svg/layout-25-25-25-25-single-tone-v1.svg';
+
 console.log(localesData);
 
 const defaultCategories: ExtensionProps['categories'] = [
@@ -153,42 +167,27 @@ const defaultCategories: ExtensionProps['categories'] = [
       },
       {
         type: AdvancedType.IMAGE_WITH_3_VERTICAL_TEXT,
-        iconUrl:ImageText3XIcon,
+        iconUrl: ImageText3XIcon,
       },
       {
         type: AdvancedType.IMAGE_3X,
-        iconUrl : Image3xIcon,
+        iconUrl: Image3xIcon,
       },
       {
         type: AdvancedType.IMAGE_2X,
-        iconUrl:Image2xIcon
+        iconUrl: Image2xIcon,
       },
       {
         type: AdvancedType.SHADOW,
-        iconUrl:ShadowIcon
+        iconUrl: ShadowIcon,
       },
-    ],     
+    ],
   },
   {
     label: 'Layout',
     active: true,
     displayType: 'column',
     blocks: [
-      {
-        title: '2 columns',
-        payload: [
-          ['50%', '50%'],
-          ['33%', '67%'],
-          ['67%', '33%'],
-          ['25%', '75%'],
-          ['75%', '25%'],
-          ['33.33%', '33.33%', '33.33%'],
-          ['25%', '25%', '50%'],
-          ['50%', '25%', '25%'],
-          ['25%', '25%', '25%', '25%'],
-        ],
-        // iconUrl:Image2xIcon
-      },
       // {
       //   title: '3 columns',
       //   payload: [
@@ -197,10 +196,52 @@ const defaultCategories: ExtensionProps['categories'] = [
       //     ['50%', '25%', '25%'],
       //   ],
       // },
-      // {
-      //   title: '4 columns',
-      //   payload: [['25%', '25%', '25%', '25%']],
-      // },
+      {
+        title: '2 columns',
+        payload: [['50%', '50%']],
+        iconUrl: col50_50,
+      },
+      {
+        title: '2 columns',
+        payload: [['33%', '67%']],
+        iconUrl: col33_67,
+      },
+      {
+        title: '2 columns',
+        payload: [['67%', '33%']],
+        iconUrl: col67_33,
+      },
+      {
+        title: '2 columns',
+        payload: [['25%', '75%']],
+        iconUrl: col25_75,
+      },
+      {
+        title: '2 columns',
+        payload: [['75%', '25%']],
+        iconUrl: col75_25,
+      },
+      {
+        title: '3 columns',
+        payload: [['33.33%', '33.33%', '33.33%']],
+        iconUrl: col33_33_33,
+      },
+      {
+        title: '3 columns',
+        payload: [['25%', '25%', '50%']],
+        iconUrl: col25_25_50,
+      },
+      {
+        title: '3 columns',
+        payload: [['50%', '25%', '25%']],
+        iconUrl: col50_25_25,
+      },
+
+      {
+        title: '4 columns',
+        payload: [['25%', '25%', '25%', '25%']],
+        iconUrl: col25_25_25_25,
+      },
     ],
   },
   {
