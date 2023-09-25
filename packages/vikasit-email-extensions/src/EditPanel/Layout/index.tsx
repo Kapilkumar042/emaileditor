@@ -70,7 +70,15 @@ export function Layouts() {
   );
 }
 
-function LayoutItem({ columns, title, iconUrl }: { columns: string[][]; title: string; iconUrl?:string }) {
+function LayoutItem({
+  columns,
+  title,
+  iconUrl,
+}: {
+  columns: string[][];
+  title: string;
+  iconUrl?: string;
+}) {
   // const [visible, setVisible] = useState(false);
 
   return (
@@ -101,15 +109,16 @@ function LayoutItem({ columns, title, iconUrl }: { columns: string[][]; title: s
               type={AdvancedType.SECTION}
               payload={payload}
             >
-              <IconFont
-            style={{ fontSize: 20 }}
-            iconUrl={iconUrl}
-          />
-          {/* <Typography.Text style={{ marginTop: 10 }}>
-            {title || "kkkk"}
-          </Typography.Text> */}
-              <div>
-                <div className={layoutstyles.blockItemContainer}>
+              <div className={layoutstyles.blockItemContainer}>
+                <IconFont
+                  style={{ fontSize: 20 }}
+                  iconUrl={iconUrl}
+                />
+                <Typography.Text style={{ marginTop: 10 }}>
+                  {title || 'kkkk'}
+                </Typography.Text>
+                <div>
+                  {/* <div className={layoutstyles.blockItemContainer}> */}
                   {item.map((column, index) => {
                     return (
                       <>
@@ -117,6 +126,7 @@ function LayoutItem({ columns, title, iconUrl }: { columns: string[][]; title: s
                       </>
                     );
                   })}
+                  {/* </div> */}
                 </div>
               </div>
             </BlockAvatarWrapper>
