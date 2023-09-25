@@ -33,7 +33,7 @@ import { BasicType, AdvancedType } from 'vikasit-email-core';
 import { ThreeVerticalImage } from './ThreeVerticalImage';
 import { TwoVerticalImage } from './TwoVerticalImage';
 import { TwoTextNew } from './TwoTextNew';
-
+import { Footer } from "./Footer"
 import { Shadow } from './Shadow';
 export const blocks = {
   [BasicType.PAGE]: Page,
@@ -56,7 +56,7 @@ export const blocks = {
   [BasicType.CAROUSEL]: Carousel,
   [BasicType.HERO]: Hero,
   [BasicType.TWOTEXTNEW]: TwoTextNew,
-
+  [BasicType.FOOTER]: Footer,
   [BasicType.IMAGE_WITH_RIGHT_TEXT] : ImageWithRightText ,
   [BasicType.VERTICAL]: VerticalImage,
   [BasicType.SHADOW]:Shadow,

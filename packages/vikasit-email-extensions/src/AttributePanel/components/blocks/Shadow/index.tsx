@@ -13,7 +13,7 @@ export function Shadow() {
       <CollapseWrapper defaultActiveKey={['-1', '0', '1', '2', '3']}>
         <Collapse.Item name='1' header={t('Dimension')}>
           <Space direction='vertical'>
-            <Height />
+            {/* <Height /> */}
             <Padding />
           </Space>
         </Collapse.Item>

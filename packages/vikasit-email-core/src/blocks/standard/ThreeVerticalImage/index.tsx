@@ -80,7 +80,7 @@ export const ThreeVerticalImage = createBlock<IThreeVerticalImage>({
                   attributes: {
                     align: 'center',
                     height: 'auto',
-                    padding: '10px 0px 10px 0px',
+                    padding: '10px 0px 0px 0px',
                     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGHL9r9OucwArH8yO3rEDPryG4V3tSCBw-w&usqp=CAU',
                   },
                   children: [],
@@ -106,7 +106,7 @@ export const ThreeVerticalImage = createBlock<IThreeVerticalImage>({
                   attributes: {
                     align: 'center',
                     height: 'auto',
-                    padding: '10px 0px 10px 0px',
+                    padding: '10px 0px 0px 0px',
                     src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGHL9r9OucwArH8yO3rEDPryG4V3tSCBw-w&usqp=CAU',
                   },
                   children: [],
@@ -132,7 +132,7 @@ export const ThreeVerticalImage = createBlock<IThreeVerticalImage>({
                       attributes: {
                         align: 'center',
                         height: 'auto',
-                        padding: '10px 0px 10px 0px',
+                        padding: '10px 0px 0px 0px',
                         src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVGHL9r9OucwArH8yO3rEDPryG4V3tSCBw-w&usqp=CAU',
                       },
                       children: [],

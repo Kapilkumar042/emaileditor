@@ -89,6 +89,8 @@ import TitleIcon from '../../Icons/svg/block-title-single-tone-v1.svg';
 import TwoTextIcon from '../../Icons/svg/block-text-text-horizontal-single-tone-v1.svg';
 
 import ShadowIcon from '../../Icons/svg/block-shadow-single-tone-v1.svg';
+import FooterIcon from '../../Icons/svg/block-footer-single-tone-v1.svg';
+
 console.log(localesData);
 
 const defaultCategories: ExtensionProps['categories'] = [
@@ -167,6 +169,10 @@ const defaultCategories: ExtensionProps['categories'] = [
         type: AdvancedType.SHADOW,
         iconUrl:ShadowIcon
       },
+      {
+        type: AdvancedType.FOOTER,
+        iconUrl:FooterIcon
+      },
     ],     
   },
   {
@@ -236,10 +242,6 @@ const defaultCategories: ExtensionProps['categories'] = [
             }}
           />
         </div>
-      </BlockAvatarWrapper>,
-
-      <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
-        <div className='ml-10'>Footer</div>
       </BlockAvatarWrapper>,
     ],
   },
