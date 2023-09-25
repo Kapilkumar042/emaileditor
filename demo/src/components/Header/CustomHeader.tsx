@@ -1,11 +1,26 @@
-import { Button } from '@arco-design/web-react';
+import { Button, Dropdown, Menu } from '@arco-design/web-react';
 import { IconClockCircle, IconDoubleLeft, IconEye, IconMoreVertical } from '@arco-design/web-react/icon';
-import React, { FC } from 'react';
+import React, { FC, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-
 const CustomHeader: FC = () => {
   const history = useHistory();
   const ButtonGroup = Button.Group;
+
+  const Data=[
+    {id:1, value:"Example 1"},
+    {id:2, value:"Example 2"},
+    {id:3, value:"Example 3"},
+    {id:4, value:"Example 4"},
+]
+  const dropList = (
+    <Menu>
+      {
+        Data.map((item:any)=>(
+          <Menu.Item key={item.id}>{item.value}</Menu.Item>
+        ))
+      }
+    </Menu>
+  );
   return (
     <header className='flex justify-between w-full h-16 px-3 py-4'>
       <div className='flex items-center gap-4'>
@@ -27,8 +42,10 @@ const CustomHeader: FC = () => {
         </div>
         <div>
           <ButtonGroup>
-            <Button type='primary'>{t('HeaderSaveButton')}</Button>
-            <Button type='primary' icon={<IconMoreVertical />} />
+            {/* <Button type='primary'>{t('HeaderSaveButton')}</Button> */}
+            <Dropdown.Button type='primary' icon={<IconMoreVertical />} droplist={dropList}  trigger='click'>
+            {t('HeaderSaveButton')}
+            </Dropdown.Button>
           </ButtonGroup>
         </div>
       </div>
