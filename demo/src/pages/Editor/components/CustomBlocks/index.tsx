@@ -6,18 +6,13 @@ import {
   Panel as ProductRecommendationPanel,
   ProductRecommendation,
 } from './ProductRecommendation';
-import { FooterSection, FooterPanel as FooterRecmmendationPanel } from './Footer/index';
-
-import { ReactNode } from 'react';
 
 BlockManager.registerBlocks({
   [CustomBlocksType.PRODUCT_RECOMMENDATION]: ProductRecommendation,
-  [CustomBlocksType.FOOTER_SECTION]: FooterSection,
 });
 
 BlockAttributeConfigurationManager.add({
   [CustomBlocksType.PRODUCT_RECOMMENDATION]: ProductRecommendationPanel,
-  [CustomBlocksType.FOOTER_SECTION]: FooterRecmmendationPanel,
 });
 
 

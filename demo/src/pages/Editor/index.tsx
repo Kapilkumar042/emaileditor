@@ -103,6 +103,8 @@ import col25_25_25_25 from '../../Icons/svg/layout-25-25-25-25-single-tone-v1.sv
 
 //  import layoutIcon from '../../Icons/svg/layout-25-25-25-25-single-tone-v1.svg';
 
+import FooterIcon from '../../Icons/svg/block-footer-single-tone-v1.svg';
+
 console.log(localesData);
 
 const defaultCategories: ExtensionProps['categories'] = [
@@ -180,6 +182,11 @@ const defaultCategories: ExtensionProps['categories'] = [
       {
         type: AdvancedType.SHADOW,
         iconUrl: ShadowIcon,
+      },
+
+      {
+        type: AdvancedType.FOOTER,
+        iconUrl: FooterIcon,
       },
     ],
   },
@@ -277,10 +284,6 @@ const defaultCategories: ExtensionProps['categories'] = [
             }}
           />
         </div>
-      </BlockAvatarWrapper>,
-
-      <BlockAvatarWrapper type={CustomBlocksType.FOOTER_SECTION}>
-        <div className='ml-10'>Footer</div>
       </BlockAvatarWrapper>,
     ],
   },
