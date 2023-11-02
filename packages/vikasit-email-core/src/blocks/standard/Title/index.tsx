@@ -10,6 +10,11 @@ import { getImg } from '@core/utils/getImg';
 export type ITitle = IBlockData<
   {
     color?: string;
+    mode?: string;
+    'vertical-align'?: string;
+    'background-url'?: string;
+    'background-color'?: string;
+    'background-position'?: string;
     'font-family'?: string;
     'font-size'?: string;
     'font-style'?: string;
